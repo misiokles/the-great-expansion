@@ -2,7 +2,7 @@
     "empower":
     {   
         "type": "combat",
-        "targetType":"LOCATION",
+        "targetType":"CREATURE",
         "name": "Empower",
 		"school" : {
 			"air" : false,

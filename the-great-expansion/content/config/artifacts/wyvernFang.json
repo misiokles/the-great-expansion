@@ -13,7 +13,7 @@
 				"val" : 2,
 				"valueType" : "ADDITIVE_VALUE"
 			},
-			"blinds" :
+			"poison" :
 			{
 				"type" : "SPELL_AFTER_ATTACK",
 				"subtype" : "spell.poison",

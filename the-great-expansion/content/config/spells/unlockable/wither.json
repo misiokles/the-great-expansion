@@ -2,7 +2,7 @@
     "wither":
     {   
         "type": "combat",
-        "targetType":"LOCATION",
+        "targetType":"CREATURE",
         "name": "Wither",
 		"school" : {
 			"air" : false,

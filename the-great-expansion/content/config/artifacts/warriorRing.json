@@ -20,7 +20,7 @@
 			"map" : "artifacts/warriorRing/adventure.def"
 		},
 		"text" : {
-			"description" : "{Warrior's Ring}\r\n\r\nIncreases damage dealt by meelee units in the hero's army by 10%.",
+			"description" : "{Warrior's Ring}\r\n\r\nIncreases damage dealt by melee units in the hero's army by 10%.",
 			"event" : "You are a witness of a warrior fighting a gorgon. Seeing that he's loosing it, you charge and slay the beast. In gratitude, thewarrior gives you his magic ring.",
 			"name" : "Warrior's Ring"
 		}

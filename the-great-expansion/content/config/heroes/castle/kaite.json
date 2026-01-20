@@ -13,7 +13,7 @@
 			"biography" : "Kaite was responsible for training pikemen to guard the king, but once the war in Erathia has begun, she changed the training and took her soldiers to the offensive. Now her pikemen are known for their offensive capabilities.",
 			"specialty" :
 			{
-				"description" : "Pikemen in the hero's army receive a bonus of +1 to their Speed and Damage.",
+				"description" : "Pikemen and Halberdiers in the hero's army receive a bonus of +1 to their Speed and Damage.",
 				"tooltip" : "Creature Bonus: Pikemen",
 				"name" : "Pikemen"
 			}

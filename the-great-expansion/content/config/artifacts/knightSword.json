@@ -25,7 +25,7 @@
 			"map" : "artifacts/knightSword/adventure.def"
 		},
 		"text" : {
-			"description" : "{Knight Sword}\r\n\r\nIncreases Defense and Morale of the hero by 1.",
+			"description" : "{Knight Sword}\r\n\r\nIncreases Attack and Morale of the hero by 1.",
 			"event" : "You notice a dead knight with a sword in a pristine condition. Deciding that it would be a waste to let it deteriorate, you take it.",
 			"name" : "Knight Sword"
 		}

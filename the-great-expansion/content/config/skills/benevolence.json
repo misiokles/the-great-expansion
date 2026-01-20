@@ -31,7 +31,7 @@
 			}
 		},
 		"basic" : {
-			"description" : "{Basic Benevolence}\n\nIncreases effectiveness of some spells:\nBless increases the target's Damage by an additional 1. Bloodlust increases Attack by an additional 1.\nHaste increases Speed by an additional 1.\nStone Skin increases Defense by an additional 1.",
+			"description" : "{Basic Benevolence}\n\nIncreases effectiveness of some spells:\nBless increases the target's Damage by an additional 1.\nBloodlust increases Attack by an additional 1.\nHaste increases Speed by an additional 1.\nStone Skin increases Defense by an additional 1.",
 			"effects" : {
 				"bless" : {
 					"addInfo" : 1
