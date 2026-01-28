@@ -1,0 +1,77 @@
+{
+	"qlinn" :
+	{
+		"class" : "alchemist",
+		"spellbook": [ "bloodlust" ],
+		"female" : true,
+		"special" : false,
+		"onlyOnWaterMap" : false,
+		"onlyOnMapWithoutWater" : false,
+
+		"texts" :
+		{
+			"name" : "Qlinn",
+			"biography" : "Qlinn fell in love in the small green creatures the first time she saw them and now takes a good care to keep them healthy. Thanks to this, their attacks are extra powerful.",
+			"specialty" :
+			{
+				"description" : "Gremlins and Master Gremlins in the hero's army receive a bonus of +1 to Damage.",
+				"tooltip" : "Creature Bonus: Gremlins",
+				"name" : "Gremlins"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "heroes/tower/qlinn/specSmall.png",
+			"specialtyLarge" : "heroes/tower/qlinn/specLarge.png",
+			"large" : "heroes/tower/qlinn/large.png",
+			"small" : "heroes/tower/qlinn/small.png"
+		},
+		"army" :
+		[
+			{
+				"creature" : "gremlin",
+				"max" : 40,
+				"min" : 30
+			},
+			{
+				"creature" : "gremlin",
+				"max" : 40,
+				"min" : 30
+			},
+			{
+				"creature" : "gremlin",
+				"max" : 40,
+				"min" : 30
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "enchantWeapons"
+			},
+			{
+				"level" : "basic",
+				"skill" : "learning"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"damage" : {
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageBoth",
+					"val" : 1,
+					"valueType" : "BASE_NUMBER",
+					"limiters": [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "gremlin",
+							"includeUpgrades" : true
+						}
+					]
+				}
+			}
+		}
+	}
+}

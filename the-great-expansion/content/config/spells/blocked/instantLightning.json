@@ -11,7 +11,7 @@
 		},
 		"level" : 0,
 		"defaultGainChance" : 0,
-		"power" : 8,
+		"power" : 3,
 		"flags" : {
 			"damage" : true,
 			"negative" : true
@@ -40,10 +40,10 @@
 				"power" : 0
 			},
 			"advanced" : {
-				"power" : 100
+				"power" : 35
 			},
 			"expert" : {
-				"power" : 200
+				"power" : 75
 			}
 		}
 	}

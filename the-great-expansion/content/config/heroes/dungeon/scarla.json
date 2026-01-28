@@ -1,0 +1,110 @@
+{
+	"scarla" :
+	{
+		"class" : "overlord",
+		"female" : true,
+		"special" : false,
+		"onlyOnWaterMap" : false,
+		"onlyOnMapWithoutWater" : false,
+
+		"texts" :
+		{
+			"name" : "Scarla",
+			"biography" : "Scarla is known for aerial assaults. Not only dragons, but also other winged monstrosities guided by this overlord are hard like rock and strike as hard. She excels at quick fights, leaving her foes overwhelmed and not able to counterattack.",
+			"specialty" :
+			{
+				"description" : "Flying creatures in the hero's army receive a bonus of +0.75% per hero level to damage dealt and -0.75% to damage received per hero level.",
+				"tooltip" : "Unique Bonus: Aerial Champion",
+				"name" : "Aerial Champion"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "heroes/dungeon/scarla/specSmall.png",
+			"specialtyLarge" : "heroes/dungeon/scarla/specLarge.png",
+			"large" : "heroes/dungeon/scarla/large.png",
+			"small" : "heroes/dungeon/scarla/small.png"
+		},
+		"army" :
+		[
+			{
+				"creature" : "troglodyte",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "harpy",
+				"max" : 8,
+				"min" : 6
+			},
+			{
+				"creature" : "beholder",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "skyMaster"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"flyDamageMle" : {
+					"type" : "PERCENTAGE_DAMAGE_BOOST",
+					"subtype" : "damageTypeMelee",
+					"valueType" : "BASE_NUMBER",
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"valPer20" : 15,
+						"stepSize" : 1
+					},
+					"limiters" : [
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "FLYING"
+						}
+					]
+				},
+				"flyDamageRng" : {
+					"type" : "PERCENTAGE_DAMAGE_BOOST",
+					"subtype" : "damageTypeRanged",
+					"valueType" : "BASE_NUMBER",
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"valPer20" : 15,
+						"stepSize" : 1
+					},
+					"limiters" : [
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "FLYING"
+						}
+					]
+				},
+				"defense" : {
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"valueType" : "BASE_NUMBER",
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"valPer20" : 15,
+						"stepSize" : 1
+					},
+					"limiters" : [
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "FLYING"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -16,16 +16,16 @@
 							"VV",
 							"VA"
 						],
-						"removable": false,
-						"sounds" : {
-							"visit" : ["MORALE"]
-						}
 					}
 				},
 				"aiValue" : 400,
 				"rmg" : {
 					"value"		: 400,
 					"rarity"	: 12
+				},
+				"removable": false,
+				"sounds" : {
+					"visit" : ["MORALE"]
 				},
 				"compatibilityIdentifiers" : [ "object" ],
 				"description" : "Increases Movement Points and Max Health of units for the next battle.",

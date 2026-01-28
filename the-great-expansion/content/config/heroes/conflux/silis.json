@@ -1,0 +1,98 @@
+{
+	"silis" :
+	{
+		"class" : "elementalist",
+		"spellbook": [ "haste" ],
+		"female" : true,
+		"special" : false,
+		"onlyOnWaterMap" : false,
+		"onlyOnMapWithoutWater" : false,
+
+		"texts" :
+		{
+			"name" : "Silis",
+			"biography" : "What Silis couldn't find in the forests of AvLee, she found behind the gates of Conflux. the playful sprites she loves to spend time with. If not for the war, she would stay with them until the end of her days.",
+			"specialty" :
+			{
+				"description" : "Pixies and Sprites in the hero's army receive a bonus of +1 to Damage and Speed. Pixies also gain the No Retaliation ability.",
+				"tooltip" : "Creature Bonus: Pixies",
+				"name" : "Pixies"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "heroes/conflux/silis/specSmall.png",
+			"specialtyLarge" : "heroes/conflux/silis/specLarge.png",
+			"large" : "heroes/conflux/silis/large.png",
+			"small" : "heroes/conflux/silis/small.png"
+		},
+		"army" :
+		[
+			{
+				"creature" : "pixie",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "pixie",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "pixie",
+				"max" : 25,
+				"min" : 15
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "airMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "recruitment"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"speed" : {
+					"type" : "STACKS_SPEED",
+					"val" : 1,
+					"valueType" : "BASE_NUMBER",
+					"limiters": [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "pixie",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"damage" : {
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageBoth",
+					"val" : 1,
+					"valueType" : "ADDITIVE_VALUE",
+					"limiters": [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "pixie",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"noRetaliation" : {
+					"type" : "BLOCKS_RETALIATION",
+					"limiters": [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "pixie"
+						}
+					]
+				}
+			}
+		}
+	}
+}

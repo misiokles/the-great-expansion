@@ -15,11 +15,6 @@
 							"V",
 							"A"
 						],
-						"removable": true,
-						"sounds" : {
-							"visit" : ["CHEST"],
-							"removal" : [ "PICKUP01", "PICKUP02", "PICKUP03", "PICKUP04", "PICKUP05", "PICKUP06", "PICKUP07" ]
-						}
 					},
 					"alt" : {
 						"animation" : "mapObjects/treasurePile2.def",
@@ -32,17 +27,17 @@
 							"V",
 							"A"
 						],
-						"removable": true,
-						"sounds" : {
-							"visit" : ["CHEST"],
-							"removal" : [ "PICKUP01", "PICKUP02", "PICKUP03", "PICKUP04", "PICKUP05", "PICKUP06", "PICKUP07" ]
-						}
 					}
 				},
 				"aiValue" : 2000,
 				"rmg" : {
 					"value"		: 1500,
 					"rarity"	: 1000
+				},
+				"removable": true,
+				"sounds" : {
+					"visit" : ["CHEST"],
+					"removal" : [ "PICKUP01", "PICKUP02", "PICKUP03", "PICKUP04", "PICKUP05", "PICKUP06", "PICKUP07" ]
 				},
 				"compatibilityIdentifiers" : [ "object" ],
 				"blockedVisitable" : true,
@@ -57,7 +52,7 @@
 								"anyOf" : [ "mercury", "gems", "sulfur", "crystal" ],
 								"amount" : 4
 							}
-						]
+						],
 						"removeObject" : true,
 					},
 					{
@@ -72,7 +67,7 @@
 								"anyOf" : [ "mercury", "gems", "sulfur", "crystal" ],
 								"amount" : 3
 							}
-						]
+						],
 						"removeObject" : true,
 					},
 					{
@@ -87,7 +82,7 @@
 								"anyOf" : [ "mercury", "gems", "sulfur", "crystal" ],
 								"amount" : 2
 							}
-						]
+						],
 						"removeObject" : true,
 					},
 					{

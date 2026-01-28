@@ -1,0 +1,57 @@
+{
+	"swiftStriker" : {
+		"type" : "ability",
+		"name" : "Swift Striker",
+		"targetType" : "CREATURE",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 0,
+		"defaultGainChance" : 0,
+		"power" : 8,
+		"flags" : {
+			"positive" : true
+		},
+
+		"graphics" : {
+			"iconEffect" : "spells/swiftStriker/effect"
+		},
+		"levels" : {
+			"base" : {
+				"range" : "X",
+				"power" : 4,
+				"cost": 0,
+				"description" : "Increases Attack and Speed of the stack by 2.",
+				"effects" : {
+					"attack" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : 3,
+						"duration" : "N_TURNS"
+					},
+					"stacksSpeed" : {
+						"type" : "STACKS_SPEED",
+						"val" : 3,
+						"duration" : "N_TURNS"
+					}
+				},
+				"targetModifier":{"smart":true}
+			},
+			"none" : {
+				"power" : 1
+			},
+			"basic" : {
+				"power" : 1
+			},
+			"advanced" : {
+				"power" : 1
+			},
+			"expert" : {
+				"power" : 1
+			}
+		}
+	}
+}

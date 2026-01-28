@@ -14,12 +14,7 @@
 						"mask" : [
 							"V",
 							"A"
-						],
-						"removable": true,
-						"sounds" : {
-							"visit" : ["CHEST"],
-							"removal" : [ "PICKUP01", "PICKUP02", "PICKUP03", "PICKUP04", "PICKUP05", "PICKUP06", "PICKUP07" ]
-						}
+						]
 					},
 					"alt" : {
 						"animation" : "mapObjects/treasurePile4.def",
@@ -31,18 +26,18 @@
 						"mask" : [
 							"V",
 							"A"
-						],
-						"removable": true,
-						"sounds" : {
-							"visit" : ["CHEST"],
-							"removal" : [ "PICKUP01", "PICKUP02", "PICKUP03", "PICKUP04", "PICKUP05", "PICKUP06", "PICKUP07" ]
-						}
+						]
 					}
 				},
 				"aiValue" : 2000,
 				"rmg" : {
 					"value"		: 1500,
 					"rarity"	: 1000
+				},
+				"removable": true,
+				"sounds" : {
+					"visit" : ["CHEST"],
+					"removal" : [ "PICKUP01", "PICKUP02", "PICKUP03", "PICKUP04", "PICKUP05", "PICKUP06", "PICKUP07" ]
 				},
 				"compatibilityIdentifiers" : [ "object" ],
 				"blockedVisitable" : true,
@@ -57,7 +52,7 @@
 								"anyOf" : [ "wood", "ore" ],
 								"amount" : 8
 							}
-						]
+						],
 						"removeObject" : true,
 					},
 					{
@@ -72,7 +67,7 @@
 								"anyOf" : [ "wood", "ore" ],
 								"amount" : 6
 							}
-						]
+						],
 						"removeObject" : true,
 					},
 					{
@@ -87,7 +82,7 @@
 								"anyOf" : [ "wood", "ore" ],
 								"amount" : 4
 							}
-						]
+						],
 						"removeObject" : true,
 					},
 					{

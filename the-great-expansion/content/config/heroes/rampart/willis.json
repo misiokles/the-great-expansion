@@ -1,0 +1,68 @@
+{
+	"willis" :
+	{
+		"class" : "ranger",
+		"female" : false,
+		"special" : false,
+		"onlyOnWaterMap" : false,
+		"onlyOnMapWithoutWater" : false,
+
+		"texts" :
+		{
+			"name" : "Willis",
+			"biography" : "Willis is a master of guerilla tactics. He makes sure he strikes his foes before they are able to hit back, and does it with little to no loses.",
+			"specialty" :
+			{
+				"description" : "Your units receive a bonus of +3 to Attack and Speed during the first round of combat.",
+				"tooltip" : "Unique Bonus: Swift Striker",
+				"name" : "Swift Striker"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "heroes/rampart/willis/specSmall.png",
+			"specialtyLarge" : "heroes/rampart/willis/specLarge.png",
+			"large" : "heroes/rampart/willis/large.png",
+			"small" : "heroes/rampart/willis/small.png"
+		},
+		"army" :
+		[
+			{
+				"creature" : "centaur",
+				"max" : 24,
+				"min" : 12
+			},
+			{
+				"creature" : "dwarf",
+				"max" : 7,
+				"min" : 5
+			},
+			{
+				"creature" : "woodElf",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "resistance"
+			},
+			{
+				"level" : "basic",
+				"skill" : "swiftness"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"main" : {
+					"subtype" : "spell.swiftStriker",
+					"type" : "OPENING_BATTLE_SPELL",
+					"val" : 2,
+				}
+			}
+		}
+	}
+}
