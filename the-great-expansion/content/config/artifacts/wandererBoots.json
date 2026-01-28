@@ -17,7 +17,7 @@
 		"type" : [
 			"HERO"
 		],
-		"class" : "MAJOR",
+		"class" : "RELIC",
 		"slot" : "FEET",
 		"value" : 14500,
 		"graphics" : {

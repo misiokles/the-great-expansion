@@ -2,7 +2,7 @@
     "regeneration":
     {   
         "type": "combat",
-        "targetType":"LOCATION",
+        "targetType":"CREATURE",
         "name": "Regeneration",
 		"school" : {
 			"air" : false,
@@ -31,9 +31,11 @@
 			"anyOf" : {},
 			"noneOf" : {}
 		},
+		
 		"flags" : {
-			"positive": true
+			"positive" : true
 		},
+
 		"graphics" : {
 			"iconBook" : "spells/regeneration/book",
 			"iconScroll" : "spells/regeneration/scroll",
@@ -54,7 +56,6 @@
 		"levels" : {
 			"base" : {
 				"range" : "0",
-				"power": 10, //power value was missing in original files, it's placeholder
 				"targetModifier" : {
 					"smart" : true
 				},
@@ -71,17 +72,20 @@
 			"none" : {
 				"description" : "{Regeneration}\n\nThe selected unit will heal 40 Health at the start of each of its turns.",
 
+				"power": 40,
 				"cost" : 8
 			},
 			"basic" : {
 				"description" : "{Basic Regeneration}\n\nThe selected unit will heal 40 Health at the start of each of its turns.",
 
+				"power": 40,
 				"cost" : 6
 			},
 			"advanced" : {
-				"description" : "{Advanced Regeneration}\n\nThe selected units will heal 70 Health at the start of each of its turns.",
+				"description" : "{Advanced Regeneration}\n\nThe selected unit will heal 70 Health at the start of each of its turns.",
+
+				"power": 70,
 				"cost" : 6,
-				"range": "0-1",
 				"effects" : {
 					"main" : {
 						"type" : "HP_REGENERATION",
@@ -93,10 +97,11 @@
 				}
 			},
 			"expert" : {
-				"description" : "{Expert Regeneration}\n\nThe selected units will heal 100 Health at the start of each of its turns.",
+				"description" : "{Expert Regeneration}\n\nAll friendly units will heal 100 Health at the start of each of its turns.",
 
+				"power": 100,
 				"cost" : 6,
-				"range" : "0-2",
+				"range" : "X",
 				"effects" : {
 					"main" : {
 						"type" : "HP_REGENERATION",

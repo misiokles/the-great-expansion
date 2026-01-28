@@ -1,0 +1,40 @@
+{
+	"outworldObsidian" : {
+		"bonuses" : {
+			"morale" : {
+				"type" : "MORALE",
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				],
+				"val" : -3
+			},
+			"luck" : {
+				"type" : "LUCK",
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				],
+				"val" : -3
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "RELIC",
+		"slot" : "MISC",
+		"value" : 13250,
+		"graphics" : {
+			"image" : "artifacts/outworldObsidian/icon",
+			"scenarioBonus" : "artifacts/outworldObsidian/bonus",
+			"map" : "artifacts/outworldObsidian/adventure.def"
+		},
+		"text" : {
+			"description" : "{Outworld Obsidian}\r\n\r\nReduces enemy's Morale and Luck by 3.",
+			"event" : "You notice a falling star in the distance. Following it, you find a crater with a slab of cold mineral. Looking at it makes you uneasy, but you still decide to take it.",
+			"name" : "Outworld Obsidian"
+		}
+	}
+}

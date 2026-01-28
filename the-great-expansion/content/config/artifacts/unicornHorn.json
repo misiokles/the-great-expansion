@@ -36,7 +36,7 @@
 			"map" : "artifacts/unicornHorn/adventure.def"
 		},
 		"text" : {
-			"description" : "{Unicorn Horn}\r\n\r\nStack equipped with this artifact has a bonus of +2 to Max Health, +1 to Speed, gains 20% Spell Resistance and has a 20% chance to cast Blind on the target.",
+			"description" : "{Unicorn Horn}\r\n\r\nStack equipped with this artifact has a bonus of +2 to Max Health, +1 to Speed, gains 20% Spell Resistance and has a 20% chance to cast Expert Blind on the target.",
 			"event" : "Passing through a peaceful meadow, you happen upon two mating unicorns. Trying to move as far away as possible from this sight, you stumple upon one of the unicorn horns. You keep it.",
 			"name" : "Unicorn Horn"
 		}

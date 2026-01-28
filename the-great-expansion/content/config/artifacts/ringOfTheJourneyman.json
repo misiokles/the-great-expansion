@@ -1,0 +1,26 @@
+{
+	"ringOfTheJourneyman" : {
+		"bonuses" : {
+			"spells" : {
+				"type" : "SPELLS_OF_LEVEL",
+				"subtype" : "spellLevel2"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MAJOR",
+		"slot" : "RING",
+		"value" : 6500,
+		"graphics" : {
+			"image" : "artifacts/ringOfTheJourneyman/icon",
+			"scenarioBonus" : "artifacts/ringOfTheJourneyman/bonus",
+			"map" : "artifacts/ringOfTheJourneyman/adventure.def"
+		},
+		"text" : {
+			"description" : "{Ring of the Journeyman}\r\n\r\nAllows the hero to cast all level 2 spells.",
+			"event" : "During your travels, you find a dead mage. His corpse seems to be already looted, but you find a magic ring on his finger.",
+			"name" : "Ring of the Journeyman"
+		}
+	}
+}

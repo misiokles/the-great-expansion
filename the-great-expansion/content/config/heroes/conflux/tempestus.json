@@ -1,0 +1,76 @@
+{
+	"tempestus" :
+	{
+		"class" : "planeswalker",
+		"female" : false,
+		"special" : false,
+		"onlyOnWaterMap" : false,
+		"onlyOnMapWithoutWater" : false,
+
+		"texts" :
+		{
+			"name" : "Tempestus",
+			"biography" : "Easy to get angry, loud, rapacious - this is who Tempestus is. Beware when he's angry, as he may bladt you with lightning. And he is often angry.",
+			"specialty" :
+			{
+				"description" : "Air and Storm Elementals in the hero's army gain a bonus of +8 to Max Damage.",
+				"tooltip" : "Creature Bonus: Air Elementals",
+				"name" : "Air Elementals"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "heroes/conflux/tempestus/specSmall.png",
+			"specialtyLarge" : "heroes/conflux/tempestus/specLarge.png",
+			"large" : "heroes/conflux/tempestus/large.png",
+			"small" : "heroes/conflux/tempestus/small.png"
+		},
+		"army" :
+		[
+			{
+				"creature" : "airElemental",
+				"max" : 4,
+				"min" : 3
+			},
+			{
+				"creature" : "airElemental",
+				"max" : 4,
+				"min" : 3
+			},
+			{
+				"creature" : "airElemental",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "evasion"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"damage" : {
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax",
+					"val" : 8,
+					"valueType" : "ADDITIVE_VALUE",
+					"limiters": [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "airElemental",
+							"includeUpgrades" : true
+						}
+					]
+				}
+			}
+		}
+	}
+}

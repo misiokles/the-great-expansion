@@ -1,0 +1,176 @@
+{
+	"core:creatureBank" : {
+		"types" : {
+			"druidsCave" : {
+				"name" : "Druids' Cave",
+				"templates" : {
+					"normal" : {
+						"animation" : "mapObjects/druidsCave.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VVVVV",
+							"VBBBV",
+							"VBBAB"
+						]
+					}
+				},
+				"sounds" : {
+					"visit" : [
+						"mapObjects/visit.wav"
+					]
+				},
+				"rmg" : {
+					"value" : 8000,
+					"rarity" : 31
+				},
+				"blockedVisitable" : false,
+				"onGuardedMessage" : "You are at the entrance to the druids' cave. Would you like to search it?",
+				"onVisited" : [
+					{
+						"message" : "It seems like someone already desecrated this sacred place. There's nothing to be found there."
+					}
+				],
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : { "min" : 0, "max" : 30 },
+						"guards" : [
+							{ "amount" : 56, "type" : "pegasus" },
+							{ "amount" : 20, "type" : "dendroidGuard" },
+							{ "amount" : 14, "type" : "silverPegasus" },
+							{ "amount" : 4, "type" : "dendroidSoldier" }
+						],
+						
+						"primary": [
+							{
+								"type" : "attack",
+								"amount" : 1
+							},
+							{
+								"type" : "defence",
+								"amount" : 1
+							},
+							{
+								"type" : "spellpower",
+								"amount" : 1
+							},
+							{
+								"type" : "knowledge",
+								"amount" : 1
+							}
+						],
+						"resources" : {
+							"gold" : 8750
+						}
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : { "min" : 30, "max" : 60 },
+						"guards" : [
+							{ "amount" : 56, "type" : "pegasus" },
+							{ "amount" : 25, "type" : "dendroidGuard" },
+							{ "amount" : 21, "type" : "silverPegasus" },
+							{ "amount" : 8, "type" : "dendroidSoldier" }
+						],
+						
+						"artifacts": [ { "class" : "MINOR" } ],
+						"primary": [
+							{
+								"type" : "attack",
+								"amount" : 1
+							},
+							{
+								"type" : "defence",
+								"amount" : 1
+							},
+							{
+								"type" : "spellpower",
+								"amount" : 1
+							},
+							{
+								"type" : "knowledge",
+								"amount" : 1
+							}
+						],
+						"resources" : {
+							"gold" : 8750
+						}
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : { "min" : 60, "max" : 90 },
+						"guards" : [
+							{ "amount" : 56, "type" : "pegasus" },
+							{ "amount" : 25, "type" : "dendroidGuard" },
+							{ "amount" : 28, "type" : "silverPegasus" },
+							{ "amount" : 13, "type" : "dendroidSoldier" }
+						],
+						
+						"artifacts": [ { "class" : "MAJOR" } ],
+						"primary": [
+							{
+								"type" : "attack",
+								"amount" : 1
+							},
+							{
+								"type" : "defence",
+								"amount" : 1
+							},
+							{
+								"type" : "spellpower",
+								"amount" : 1
+							},
+							{
+								"type" : "knowledge",
+								"amount" : 1
+							}
+						],
+						"resources" : {
+							"gold" : 10000
+						}
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : { "min" : 90, "max" : 100 },
+						"guards" : [
+							{ "amount" : 56, "type" : "pegasus" },
+							{ "amount" : 30, "type" : "dendroidGuard" },
+							{ "amount" : 42, "type" : "silverPegasus" },
+							{ "amount" : 21, "type" : "dendroidSoldier" }
+						],
+						
+						"primary": [
+							{
+								"type" : "attack",
+								"amount" : 1
+							},
+							{
+								"type" : "defence",
+								"amount" : 1
+							},
+							{
+								"type" : "spellpower",
+								"amount" : 1
+							},
+							{
+								"type" : "knowledge",
+								"amount" : 1
+							}
+						],
+						"artifacts": [ { "class" : "MINOR" }, { "class" : "MAJOR" } ],
+						"resources" : {
+							"gold" : 12500
+						}
+					}
+				]
+			}
+		}
+	}
+}

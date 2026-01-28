@@ -9,7 +9,7 @@
 		"type" : [
 			"HERO"
 		],
-		"class" : "RELIC",
+		"class" : "MINOR",
 		"slot" : "FEET",
 		"value" : 3500,
 		"graphics" : {
