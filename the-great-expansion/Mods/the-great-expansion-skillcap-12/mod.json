@@ -1,0 +1,14 @@
+{
+	"name" : "The Great Expansion – Skill Cap 12",
+	"description" : "Adds a skill cap of 12 secondary skills for The Great Expansion.",
+	"modType" : "Mechanics",
+	"author" : "LastSpy",
+	"contact" : "",
+	"version" : "1.0.0",
+	"depends" : ["the-great-expansion"],
+	"settings" : {
+		"heroes" : {
+			"skillPerHero" : 12
+		}
+	}
+}
