@@ -1,0 +1,150 @@
+{
+    "doom":
+    {   
+        "type": "combat",
+        "targetType":"CREATURE",
+        "name": "Doom",
+		"school" : {
+			"air" : false,
+			"earth" : true,
+			"fire" : false,
+			"water" : false
+		},
+        "level": 5,
+        "power": 10,
+        "defaultGainChance": 11, 
+        "gainChance":
+        {
+            "castle" : 9,
+			"rampart" : 14,
+			"tower" : 14,
+			"inferno" : 14,
+			"necropolis" : 18,
+			"dungeon" : 9,
+			"conflux" : 14
+        },
+
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},
+			"noneOf" : {}
+		},
+		"flags" : {
+			"negative": true
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/doom/book",
+			"iconScroll" : "spells/doom/scroll",
+			"iconScenarioBonus" : "spells/doom/scenario",
+			"iconEffect" : "spells/doom/effect"
+		},
+
+		"animation" : {
+			"affect" : [
+				"spells/doom/spell.def"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "spells/doom/sfx.wav"
+		},
+		
+		"levels" : {
+			"base":{
+				"range" : "0",
+				"power": 10, //power value was missing in original files, it's placeholder
+				"targetModifier":{"smart":true},
+				"effects" : {
+					"attack" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : -15,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS"
+					},
+					"defence" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : -15,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS"
+					},
+					"damage" : {
+						"type" : "CREATURE_DAMAGE",
+						"subtype" : "creatureDamageBoth",
+						"val" : -15,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS"
+					},
+					"health" : {
+						"type" : "STACK_HEALTH",
+						"val" : -15,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS"
+					},
+					"stacksSpeed" : {
+						"type" : "STACKS_SPEED",
+						"val" : -15,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Doom}\n\nReduces Attack, Defense, Damage, Health and Speed of a single unit.",
+
+				"cost" : 30
+			},
+			"basic" : {
+				"description" : "{Basic Doom}\n\nReduces Attack, Defense, Damage, Health and Speed of a single unit.",
+
+				"cost" : 25
+			},
+			"advanced":{
+				"description" : "{Advanced Doom}\n\nReduces Attack, Defense, Damage, Health and Speed of a single unit. The reduction is 66% more effective than Basic Doom.",
+
+				"cost" : 25,
+				"effects" : {
+					"attack" : {
+						"val" : -25
+					},
+					"defence" : {
+						"val" : -25
+					},
+					"damage" : {
+						"val" : -25
+					},
+					"health" : {
+						"val" : -25
+					},
+					"stacksSpeed" : {
+						"val" : -25
+					}
+				}
+			},
+			"expert":{
+				
+				"description" : "{Expert Doom}\n\nReduces Attack, Defense, Damage, Health and Speed of a single unit. The reduction is 133% more effective than Basic Doom.",
+				"cost" : 25,
+				"effects" : {
+					"attack" : {
+						"val" : -35
+					},
+					"defence" : {
+						"val" : -35
+					},
+					"damage" : {
+						"val" : -35
+					},
+					"health" : {
+						"val" : -35
+					},
+					"stacksSpeed" : {
+						"val" : -35
+					}
+				}
+			}
+		}
+    }
+}

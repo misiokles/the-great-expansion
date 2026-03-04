@@ -1,0 +1,113 @@
+{
+    "defender":
+    {   
+        "type": "combat",
+        "targetType":"CREATURE",
+        "name": "Defender",
+		"school" : {
+			"air" : false,
+			"earth" : true,
+			"fire" : false,
+			"water" : false
+		},
+        "level": 2,
+        "power": 10,
+        "defaultGainChance": 7, 
+        "gainChance":
+        {
+			"inferno" : 8,
+			"dungeon" : 5,
+			"stronghold" : 8,
+			"fortress" : 8,
+        },
+
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},
+			"noneOf" : {}
+		},
+		
+		"flags" : {
+			"positive" : true
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/defender/book",
+			"iconScroll" : "spells/defender/scroll",
+			"iconScenarioBonus" : "spells/defender/scenario",
+			"iconEffect" : "spells/defender/effect"
+		},
+
+		"animation" : {
+			"affect" : [
+				"spells/defender/spell.def"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "spells/defender/sfx.wav"
+		},
+		
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"targetModifier" : {
+					"smart" : true
+				},
+				"effects" : {
+					"main" : {
+						"type" : "DEFENSIVE_STANCE",
+						"val" : 10,
+						"duration" : [
+							"N_TURNS"
+						]
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Defender}\n\nThe selected unit will gain increased Defense upon taking the Defend action.",
+
+				"power": 10,
+				"cost" : 9
+			},
+			"basic" : {
+				"description" : "{Basic Defender}\n\nThe selected unit will gain increased Defense upon taking the Defend action.",
+
+				"power": 10,
+				"cost" : 7
+			},
+			"advanced" : {
+				"description" : "{Advanced Defender}\n\nThe selected unit will gain increased Defense upon taking the Defend action.\n\nThe effect is twice as powerful as the basic version.",
+
+				"power": 20,
+				"cost" : 7,
+				"effects" : {
+					"main" : {
+						"type" : "DEFENSIVE_STANCE",
+						"val" : 20,
+						"duration" : [
+							"N_TURNS"
+						]
+					}
+				}
+			},
+			"expert" : {
+				"description" : "{Expert Defender}\n\nAll friendly units will gain increased Defense upon taking the Defend action.\n\nThe effect is twice as powerful as the basic version",
+
+				"power": 20,
+				"cost" : 7,
+				"range" : "X",
+				"effects" : {
+					"main" : {
+						"type" : "DEFENSIVE_STANCE",
+						"val" : 20,
+						"duration" : [
+							"N_TURNS"
+						]
+					}
+				}
+			}
+		}
+    }
+
+}

@@ -1,0 +1,103 @@
+{
+	"shamanicLore" : {
+		"name" : "Shamanic Lore",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"fireShield" : {
+					"addInfo" : 0,
+					"subtype" : "spell.fireShield",
+					"type" : "SPECIAL_ADD_VALUE_ENCHANT"
+				},
+				"bloodlust" : {
+					"addInfo" : 0,
+					"subtype" : "spell.bloodlust",
+					"type" : "SPECIAL_ADD_VALUE_ENCHANT"
+				},
+				"haste": {
+					"addInfo" : 0,
+					"subtype" : "spell.haste",
+					"type" : "SPECIAL_ADD_VALUE_ENCHANT"
+				},
+				"counterstrike" : {
+					"addInfo" : 0,
+					"subtype" : "spell.counterstrike",
+					"type" : "SPECIAL_ADD_VALUE_ENCHANT"
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Shamanic Lore}\n\nIncreases effectiveness of some spells:\nBloodlust increases Attack by an additional 1.\nFire Shield reflects an additional 3% damage.",
+			"effects" : {
+				"fireShield" : {
+					"addInfo" : 3
+				},
+				"bloodlust" : {
+					"addInfo" : 1
+				},
+				"haste" : {
+					"addInfo" : 0
+				},
+				"counterstrike" : {
+					"addInfo" : 0
+				},
+			},
+			"images" : {
+				"small" : "skills/shamanicLore/icons/small/basic",
+				"medium" : "skills/shamanicLore/icons/medium/basic",
+				"large" : "skills/shamanicLore/icons/large/basic",
+				"scenarioBonus" : "skills/shamanicLore/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Shamanic Lore}\n\nIncreases effectiveness of some spells:\nBloodlust increases Attack by an additional 1.\nFire Shield reflects an additional 6% damage.\nHaste increases Speed by an additional 1.",
+			"effects" : {
+				"fireShield" : {
+					"addInfo" : 6
+				},
+				"bloodlust" : {
+					"addInfo" : 1
+				},
+				"haste" : {
+					"addInfo" : 1
+				},
+				"counterstrike" : {
+					"addInfo" : 0
+				},
+			},
+			"images" : {
+				"small" : "skills/shamanicLore/icons/small/advanced",
+				"medium" : "skills/shamanicLore/icons/medium/advanced",
+				"large" : "skills/shamanicLore/icons/large/advanced",
+				"scenarioBonus" : "skills/shamanicLore/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Shamanic Lore}\n\nIncreases effectiveness of some spells:\nBloodlust increases Attack by an additional 2.\nCounterstrike grants 1 additional counterattack.\nFire Shield reflects an additional 9% damage.\nHaste increases Speed by an additional 1.",
+			"effects" : {
+				"fireShield" : {
+					"addInfo" : 9
+				},
+				"bloodlust" : {
+					"addInfo" : 2
+				},
+				"haste" : {
+					"addInfo" : 1
+				},
+				"counterstrike" : {
+					"addInfo" : 1
+				},
+			},
+			"images" : {
+				"small" : "skills/shamanicLore/icons/small/expert",
+				"medium" : "skills/shamanicLore/icons/medium/expert",
+				"large" : "skills/shamanicLore/icons/large/expert",
+				"scenarioBonus" : "skills/shamanicLore/icons/large/expert"
+			}
+		}
+	}
+}

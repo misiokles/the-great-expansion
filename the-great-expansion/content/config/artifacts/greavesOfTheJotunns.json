@@ -1,0 +1,34 @@
+{
+	"greavesOfTheJotunns" : {
+		"bonuses" : {
+			"attack" : {
+				"subtype" : "primarySkill.attack",
+				"type" : "PRIMARY_SKILL",
+				"val" : 7,
+				"valueType" : "BASE_NUMBER"
+			},
+			"immunity" : {
+				"subtype" : "spell.slow",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MAJOR",
+		"slot" : "FEET",
+		"value" : 7500,
+		"graphics" : {
+			"image" : "artifacts/greavesOfTheJotunns/icon",
+			"scenarioBonus" : "artifacts/greavesOfTheJotunns/bonus",
+			"map" : "artifacts/greavesOfTheJotunns/adventure.def"
+		},
+		"text" : {
+			"description" : "{Greaves of the Jotunns}\r\n\r\nIncreases Defense of the hero by 7 and grants the units in the hero's army immunity to Slow.",
+			"event" : "Traversing through the cold mountains, you finally find the object of your search: the Greaves of the Jotunns.",
+			"name" : "Greaves of the Jotunns"
+		}
+	}
+}

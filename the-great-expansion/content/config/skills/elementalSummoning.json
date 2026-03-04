@@ -1,0 +1,79 @@
+{
+	"elementalSummoning" : {
+		"name" : "Elemental Summoning",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"airBonus" : {
+					"type" : "SPECIFIC_SPELL_DAMAGE",
+					"subtype" : "spell.airElemental",
+					"val" : 12
+				},
+				"earthBonus" : {
+					"type" : "SPECIFIC_SPELL_DAMAGE",
+					"subtype" : "spell.earthElemental",
+					"val" : 12
+				},
+				"fireBonus" : {
+					"type" : "SPECIFIC_SPELL_DAMAGE",
+					"subtype" : "spell.fireElemental",
+					"val" : 12
+				},
+				"waterBonus" : {
+					"type" : "SPECIFIC_SPELL_DAMAGE",
+					"subtype" : "spell.waterElemental",
+					"val" : 12
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Elemental Summoning}\n\nIncreases the amount of elementals summoned by Summon Air Elemental, Summon Earth Elemental, Summon Fire Elemental and Summon Water Elemental spells by 12%.",
+			"effects" : {
+				"airBonus" : { "val" : 12 },
+				"earthBonus" : { "val" : 12 },
+				"fireBonus" : { "val" : 12 },
+				"waterBonus" : { "val" : 12 }
+			},
+			"images" : {
+				"small" : "skills/elementalSummoning/icons/small/basic",
+				"medium" : "skills/elementalSummoning/icons/medium/basic",
+				"large" : "skills/elementalSummoning/icons/large/basic",
+				"scenarioBonus" : "skills/elementalSummoning/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Elemental Summoning}\n\nIncreases the amount of elementals summoned by Summon Air Elemental, Summon Earth Elemental, Summon Fire Elemental and Summon Water Elemental spells by 24%.",
+			"effects" : {
+				"airBonus" : { "val" : 24 },
+				"earthBonus" : { "val" : 24 },
+				"fireBonus" : { "val" : 24 },
+				"waterBonus" : { "val" : 24 }
+			},
+			"images" : {
+				"small" : "skills/elementalSummoning/icons/small/advanced",
+				"medium" : "skills/elementalSummoning/icons/medium/advanced",
+				"large" : "skills/elementalSummoning/icons/large/advanced",
+				"scenarioBonus" : "skills/elementalSummoning/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Elemental Summoning}\n\nIncreases the amount of elementals summoned by Summon Air Elemental, Summon Earth Elemental, Summon Fire Elemental and Summon Water Elemental spells by 36%.",
+			"effects" : {
+				"airBonus" : { "val" : 36 },
+				"earthBonus" : { "val" : 36 },
+				"fireBonus" : { "val" : 36 },
+				"waterBonus" : { "val" : 36 }
+			},
+			"images" : {
+				"small" : "skills/elementalSummoning/icons/small/expert",
+				"medium" : "skills/elementalSummoning/icons/medium/expert",
+				"large" : "skills/elementalSummoning/icons/large/expert",
+				"scenarioBonus" : "skills/elementalSummoning/icons/large/expert"
+			}
+		}
+	}
+}

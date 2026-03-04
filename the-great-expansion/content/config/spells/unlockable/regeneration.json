@@ -12,18 +12,15 @@
 		},
         "level": 2,
         "power": 10,
-        "defaultGainChance": 5, 
+        "defaultGainChance": 7, 
         "gainChance":
         {
-            "castle" : 7,
-			"rampart" : 6,
-			"tower" : 5,
-			"inferno" : 3,
-			"necropolis" : 5,
-			"dungeon" : 2,
-			"stronghold" : 3,
-			"fortress" : 5,
-			"conflux" : 7
+            "castle" : 9,
+			"rampart" : 8,
+			"inferno" : 4,
+			"dungeon" : 3,
+			"stronghold" : 4,
+			"conflux" : 9
         },
 
 		"targetCondition" : {

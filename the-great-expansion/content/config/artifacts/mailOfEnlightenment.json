@@ -1,0 +1,33 @@
+{
+	"mailOfEnlightenment" : {
+		"bonuses" : {
+			"knowledge" : {
+				"subtype" : "primarySkill.spellpower",
+				"type" : "PRIMARY_SKILL",
+				"val" : 3,
+				"valueType" : "BASE_NUMBER"
+			},
+			"experience" : {
+				"type" : "HERO_EXPERIENCE_GAIN_PERCENT",
+				"valueType" : "PERCENT_TO_BASE",
+				"val" : 20
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MAJOR",
+		"slot" : "TORSO",
+		"value" : 8250,
+		"graphics" : {
+			"image" : "artifacts/mailOfEnlightenment/icon",
+			"scenarioBonus" : "artifacts/mailOfEnlightenment/bonus",
+			"map" : "artifacts/mailOfEnlightenment/adventure.def"
+		},
+		"text" : {
+			"description" : "{Mail of Enlightenment}\r\n\r\nIncreases Spellpower of the hero by 3 and causes them to receive an additional 20% Experience from all sources.",
+			"event" : "You rest in a library to find that someone forgot to take their Mail of Enlightenment. Not wanting to leave this artifact there, you put it on and leave.",
+			"name" : "Mail of Enlightenment"
+		}
+	}
+}

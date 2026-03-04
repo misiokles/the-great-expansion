@@ -1,0 +1,103 @@
+{
+	"nighonianSorcery" : {
+		"name" : "Nighonian Sorcery",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"lightningBolt" : {
+					"val" : 12,
+					"subtype" : "spell.lightningBolt",
+					"type" : "SPECIFIC_SPELL_DAMAGE"
+				},
+				"meteorShower" : {
+					"val" : 12,
+					"subtype" : "spell.meteorShower",
+					"type" : "SPECIFIC_SPELL_DAMAGE"
+				},
+				"haste": {
+					"addInfo" : 0,
+					"subtype" : "spell.haste",
+					"type" : "SPECIAL_ADD_VALUE_ENCHANT"
+				},
+				"stoneSkin" : {
+					"addInfo" : 0,
+					"subtype" : "spell.stoneSkin",
+					"type" : "SPECIAL_ADD_VALUE_ENCHANT"
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Nighonian Sorcery}\n\nIncreases effectiveness of some spells:\nLightning Bolt and Meteor Shower damage increased by 12%.\nStone Skin increases Defense by an additional 1.",
+			"effects" : {
+				"lightningBolt" : {
+					"val" : 12
+				},
+				"meteorShower" : {
+					"val" : 12
+				},
+				"haste" : {
+					"addInfo" : 0
+				},
+				"stoneSkin" : {
+					"addInfo" : 1
+				}
+			},
+			"images" : {
+				"small" : "skills/nighonianSorcery/icons/small/basic",
+				"medium" : "skills/nighonianSorcery/icons/medium/basic",
+				"large" : "skills/nighonianSorcery/icons/large/basic",
+				"scenarioBonus" : "skills/nighonianSorcery/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Nighonian Sorcery}\n\nIncreases effectiveness of some spells:\nLightning Bolt and Meteor Shower damage increased by 24%.\nStone Skin increases Defense by an additional 1.\nHaste increases Speed by an additional 1.",
+			"effects" : {
+				"lightningBolt" : {
+					"val" : 24
+				},
+				"meteorShower" : {
+					"val" : 24
+				},
+				"haste" : {
+					"addInfo" : 1
+				},
+				"stoneSkin" : {
+					"addInfo" : 1
+				}
+			},
+			"images" : {
+				"small" : "skills/nighonianSorcery/icons/small/advanced",
+				"medium" : "skills/nighonianSorcery/icons/medium/advanced",
+				"large" : "skills/nighonianSorcery/icons/large/advanced",
+				"scenarioBonus" : "skills/nighonianSorcery/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Nighonian Sorcery}\n\nIncreases effectiveness of some spells:\nLightning Bolt and Meteor Shower damage increased by 36%.\nStone Skin increases Defense by an additional 2.\nHaste increases Speed by an additional 1.",
+			"effects" : {
+				"lightningBolt" : {
+					"val" : 36
+				},
+				"meteorShower" : {
+					"val" : 36
+				},
+				"haste" : {
+					"addInfo" : 1
+				},
+				"stoneSkin" : {
+					"addInfo" : 2
+				}
+			},
+			"images" : {
+				"small" : "skills/nighonianSorcery/icons/small/expert",
+				"medium" : "skills/nighonianSorcery/icons/medium/expert",
+				"large" : "skills/nighonianSorcery/icons/large/expert",
+				"scenarioBonus" : "skills/nighonianSorcery/icons/large/expert"
+			}
+		}
+	}
+}

@@ -17,7 +17,7 @@
 						{
 							"type" : "CREATURE_LEVEL_LIMITER",
 							"minLevel" : 5,
-							"maxlevel" : 8
+							"maxlevel" : 9
 						}
 					]
 				},
@@ -30,7 +30,7 @@
 						{
 							"type" : "CREATURE_LEVEL_LIMITER",
 							"minLevel" : 5,
-							"maxlevel" : 8
+							"maxlevel" : 9
 						}
 					]
 				},
@@ -42,7 +42,7 @@
 						{
 							"type" : "CREATURE_LEVEL_LIMITER",
 							"minLevel" : 5,
-							"maxlevel" : 8
+							"maxlevel" : 9
 						}
 					],
 				}

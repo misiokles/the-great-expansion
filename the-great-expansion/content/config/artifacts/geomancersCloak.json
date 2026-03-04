@@ -1,0 +1,28 @@
+{
+	"geomancersCloak" : {
+		"bonuses" : {
+			"spellDamage" : {
+				"type" : "SPELL_DAMAGE",
+				"subtype" : "spellSchool.earth",
+				"val" : 20,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "TREASURE",
+		"slot" : "SHOULDERS",
+		"value" : 2750,
+		"graphics" : {
+			"image" : "artifacts/geomancersCloak/icon",
+			"scenarioBonus" : "artifacts/geomancersCloak/bonus",
+			"map" : "artifacts/geomancersCloak/adventure.def"
+		},
+		"text" : {
+			"description" : "{Geomancer's Cloak}\r\n\r\nIncreases damage dealt by earth spells by 20%.",
+			"event" : "You notice a Geomancer's Cloak hanging on a nearby branch. You take it and put it on.",
+			"name" : "Geomancer's Cloak"
+		}
+	}
+}

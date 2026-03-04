@@ -1,0 +1,34 @@
+{
+	"shieldOfTheJotunns" : {
+		"bonuses" : {
+			"attack" : {
+				"subtype" : "primarySkill.defence",
+				"type" : "PRIMARY_SKILL",
+				"val" : 7,
+				"valueType" : "BASE_NUMBER"
+			},
+			"immunity" : {
+				"subtype" : "spell.berserk",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MAJOR",
+		"slot" : "LEFT_HAND",
+		"value" : 8000,
+		"graphics" : {
+			"image" : "artifacts/shieldOfTheJotunns/icon",
+			"scenarioBonus" : "artifacts/shieldOfTheJotunns/bonus",
+			"map" : "artifacts/shieldOfTheJotunns/adventure.def"
+		},
+		"text" : {
+			"description" : "{Shield of the Jotunns}\r\n\r\nIncreases Defense of the hero by 7 and grants the units in the hero's army immunity to Berserk.",
+			"event" : "Traversing through the cold mountains, you finally find the object of your search: the Shield of the Jotunns.",
+			"name" : "Shield of the Jotunns"
+		}
+	}
+}

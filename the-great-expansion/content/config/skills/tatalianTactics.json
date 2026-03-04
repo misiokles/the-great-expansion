@@ -1,0 +1,117 @@
+{
+	"tatalianTactics" : {
+		"name" : "Tatalian Tactics",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"lizardmen" : {
+					"type" : "STACK_HEALTH",
+					"val" : 1,
+					"limiters": [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "lizardman",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"lizardmen2" : {
+					"type" : "NO_WALL_PENALTY",
+					"limiters": [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "lizardman",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"serpentFlies" : {
+					"type" : "ADDITIONAL_RETALIATION",
+					"val" : 0,
+					"limiters": [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "serpentFly",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"wyverns" : {
+					"type" : "ADDITIONAL_RETALIATION",
+					"val" : 0,
+					"limiters": [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "wyvern",
+							"includeUpgrades" : true
+						}
+					]
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Tatalian Tactics}\n\nLizardmen receive a bonus of +1 to their Max Health and have No Wall Penalty.",
+			"effects" : {
+				"lizardmen" : {
+					"val" : 1
+				},
+				"serpentFlies" : {
+					"val" : 0
+				},
+				"wyverns" : {
+					"val" : 0
+				}
+			},
+			"images" : {
+				"small" : "skills/tatalianTactics/icons/small/basic",
+				"medium" : "skills/tatalianTactics/icons/medium/basic",
+				"large" : "skills/tatalianTactics/icons/large/basic",
+				"scenarioBonus" : "skills/tatalianTactics/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Tatalian Tactics}\n\nLizardmen receive a bonus of +1 to their Max Health and have No Wall Penalty. Serpent Flies can retaliate an additional time per round.",
+			"effects" : {
+				"lizardmen" : {
+					"val" : 1
+				},
+				"serpentFlies" : {
+					"val" : 1
+				},
+				"wyverns" : {
+					"val" : 0
+				}
+			},
+			"images" : {
+				"small" : "skills/tatalianTactics/icons/small/advanced",
+				"medium" : "skills/tatalianTactics/icons/medium/advanced",
+				"large" : "skills/tatalianTactics/icons/large/advanced",
+				"scenarioBonus" : "skills/tatalianTactics/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Tatalian Tactics}\n\nLizardmen receive a bonus of +1 to their Max Health and have No Wall Penalty. Serpent Flies and Wyverns can retaliate an additional time per round.",
+			"effects" : {
+				"lizardmen" : {
+					"val" : 1
+				},
+				"serpentFlies" : {
+					"val" : 1
+				},
+				"wyverns" : {
+					"val" : 1
+				}
+			},
+			"images" : {
+				"small" : "skills/tatalianTactics/icons/small/expert",
+				"medium" : "skills/tatalianTactics/icons/medium/expert",
+				"large" : "skills/tatalianTactics/icons/large/expert",
+				"scenarioBonus" : "skills/tatalianTactics/icons/large/expert"
+			}
+		}
+	}
+}

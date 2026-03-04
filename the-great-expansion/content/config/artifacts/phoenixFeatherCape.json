@@ -1,0 +1,28 @@
+{
+	"phoenixFeatherCape" : {
+		"bonuses" : {
+			"spellDamage" : {
+				"type" : "SPELL_DAMAGE",
+				"subtype" : "spellSchool.fire",
+				"val" : 20,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "TREASURE",
+		"slot" : "SHOULDERS",
+		"value" : 2750,
+		"graphics" : {
+			"image" : "artifacts/phoenixFeatherCape/icon",
+			"scenarioBonus" : "artifacts/phoenixFeatherCape/bonus",
+			"map" : "artifacts/phoenixFeatherCape/adventure.def"
+		},
+		"text" : {
+			"description" : "{Phoenix Feather Cape}\r\n\r\nIncreases damage dealt by fire spells by 20%.",
+			"event" : "You notice a Phoenix Feather Cape hanging on a nearby branch. You take it and put it on.",
+			"name" : "Phoenix Feather Cape"
+		}
+	}
+}

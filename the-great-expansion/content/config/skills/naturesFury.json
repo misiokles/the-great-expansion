@@ -1,0 +1,63 @@
+{
+	"naturesFury" : {
+		"name" : "Nature's Fury",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"max" : {
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax",
+					"val" : 1,
+					"valueType" : "ADDITIVE_VALUE",
+					"limiters" : [
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 3,
+							"maxlevel" : 63
+						}
+					]
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Nature's Fury}\n\nIncreases Max Damage of all tier 3+ units under the hero's control by 1.",
+			"effects" : {
+				"max" : { "val" : 1 }
+			},
+			"images" : {
+				"small" : "skills/naturesFury/icons/small/basic",
+				"medium" : "skills/naturesFury/icons/medium/basic",
+				"large" : "skills/naturesFury/icons/large/basic",
+				"scenarioBonus" : "skills/naturesFury/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Nature's Fury}\n\nIncreases Max Damage of all tier 3+ units under the hero's control by 2.",
+			"effects" : {
+				"max" : { "val" : 2 }
+			},
+			"images" : {
+				"small" : "skills/naturesFury/icons/small/advanced",
+				"medium" : "skills/naturesFury/icons/medium/advanced",
+				"large" : "skills/naturesFury/icons/large/advanced",
+				"scenarioBonus" : "skills/naturesFury/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Nature's Fury}\n\nIncreases Max Damage of all tier 3+ units under the hero's control by 3.",
+			"effects" : {
+				"max" : { "val" : 3 }
+			},
+			"images" : {
+				"small" : "skills/naturesFury/icons/small/expert",
+				"medium" : "skills/naturesFury/icons/medium/expert",
+				"large" : "skills/naturesFury/icons/large/expert",
+				"scenarioBonus" : "skills/naturesFury/icons/large/expert"
+			}
+		}
+	}
+}

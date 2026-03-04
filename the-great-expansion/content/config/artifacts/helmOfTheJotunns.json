@@ -1,0 +1,34 @@
+{
+	"helmOfTheJotunns" : {
+		"bonuses" : {
+			"attack" : {
+				"subtype" : "primarySkill.knowledge",
+				"type" : "PRIMARY_SKILL",
+				"val" : 7,
+				"valueType" : "BASE_NUMBER"
+			},
+			"immunity" : {
+				"subtype" : "spell.blind",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MAJOR",
+		"slot" : "HEAD",
+		"value" : 7750,
+		"graphics" : {
+			"image" : "artifacts/helmOfTheJotunns/icon",
+			"scenarioBonus" : "artifacts/helmOfTheJotunns/bonus",
+			"map" : "artifacts/helmOfTheJotunns/adventure.def"
+		},
+		"text" : {
+			"description" : "{Helm of the Jotunns}\r\n\r\nIncreases Knowledge of the hero by 7 and grants the units in the hero's army immunity to Blind.",
+			"event" : "Traversing through the cold mountains, you finally find the object of your search: the Helm of the Jotunns.",
+			"name" : "Helm of the Jotunns"
+		}
+	}
+}

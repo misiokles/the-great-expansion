@@ -1,0 +1,34 @@
+{
+	"axeOfTheJotunns" : {
+		"bonuses" : {
+			"attack" : {
+				"subtype" : "primarySkill.attack",
+				"type" : "PRIMARY_SKILL",
+				"val" : 7,
+				"valueType" : "BASE_NUMBER"
+			},
+			"immunity" : {
+				"subtype" : "spell.weakness",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MAJOR",
+		"slot" : "RIGHT_HAND",
+		"value" : 7750,
+		"graphics" : {
+			"image" : "artifacts/axeOfTheJotunns/icon",
+			"scenarioBonus" : "artifacts/axeOfTheJotunns/bonus",
+			"map" : "artifacts/axeOfTheJotunns/adventure.def"
+		},
+		"text" : {
+			"description" : "{Axe of the Jotunns}\r\n\r\nIncreases Attack of the hero by 7 and grants the units in the hero's army immunity to Weakness.",
+			"event" : "Traversing through the cold mountains, you finally find the object of your search: the Axe of the Jotunns.",
+			"name" : "Axe of the Jotunns"
+		}
+	}
+}

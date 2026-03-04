@@ -1,0 +1,34 @@
+{
+	"blacksmithHammer" : {
+		"bonuses" : {
+			"attack" : {
+				"subtype" : "primarySkill.attack",
+				"type" : "PRIMARY_SKILL",
+				"val" : 1,
+				"valueType" : "BASE_NUMBER"
+			},
+			"spellpower" : {
+				"subtype" : "primarySkill.spellpower",
+				"type" : "PRIMARY_SKILL",
+				"val" : 1,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "TREASURE",
+		"slot" : "RIGHT_HAND",
+		"value" : 2000,
+		"graphics" : {
+			"image" : "artifacts/blacksmithHammer/icon",
+			"scenarioBonus" : "artifacts/blacksmithHammer/bonus",
+			"map" : "artifacts/blacksmithHammer/adventure.def"
+		},
+		"text" : {
+			"description" : "{Blacksmith's Hammer}\r\n\r\nIncreases Attack and Spellpower of the hero by 1.",
+			"event" : "You enter a blacksmith to buy some war machines, but seeing noone is there, you take one of the hammers and move on.",
+			"name" : "Blacksmith's Hammer"
+		}
+	}
+}

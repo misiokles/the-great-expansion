@@ -1,0 +1,75 @@
+{
+	"combustion" : {
+		"type" : "combat",
+		"name" : "Combustion",
+		"targetType": "CREATURE",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : true,
+			"water" : false
+		},
+		"level" : 1,
+        "defaultGainChance": 8, 
+        "gainChance":
+        {
+			"castle" : 5,
+			"rampart" : 5,
+			"tower" : 8,
+			"inferno" : 12,
+			"necropolis" : 8,
+			"dungeon" : 11,
+			"stronghold" : 7,
+			"fortress" : 7,
+			"conflux" : 10
+        },
+		"power" : 5,
+		"flags" : {
+			"damage" : true,
+			"negative" : true
+		},
+		"graphics" : {
+			"iconBook" : "spells/combustion/book",
+			"iconScroll" : "spells/combustion/scroll",
+			"iconScenarioBonus" : "spells/combustion/scenario",
+			"iconEffect" : "spells/combustion/effect"
+		},
+		"animation" : {
+			"hit" : ["C09SPF3"]
+		},
+		"sounds" : {
+		   "cast" : "LANDKILL"
+		},
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"power" : 0,
+				"battleEffects" : {
+					"directDamage" : {"type":"core:damage"}
+				},
+				"targetModifier":{"smart":true},
+				"cost" : 5
+			},
+			"none" : {
+				"description" : "{Combustion}\n\nDeals fire damage to the target.",
+				"power" : 25,
+				"cost" : 5
+			},
+			"basic" : {
+				"description" : "{Basic Combustion}\n\nDeals fire damage to the target.",
+				"power" : 25,
+				"cost" : 4
+			},
+			"advanced" : {
+				"description" : "{Advanced Combustion}\n\nDeals fire damage to the target.\n\nDamage inflicted is 25 more than Basic Combustion.",
+				"power" : 50,
+				"cost" : 4
+			},
+			"expert" : {
+				"description" : "{Expert Combustion}\n\nDeals fire damage to the target.\n\nDamage inflicted is 105 more than Basic Combustion.",
+				"power" : 130,
+				"cost" : 4
+			}
+		}
+	}
+}

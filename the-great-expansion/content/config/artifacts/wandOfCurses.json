@@ -6,7 +6,7 @@
 				"type" : "SPELL_AFTER_ATTACK",
 				"subtype" : "spell.curse",
 				"val" : 30,
-				"addInfo" : [3,0]
+				"addInfo" : [2,0]
 			}
 		},
 		"type" : [

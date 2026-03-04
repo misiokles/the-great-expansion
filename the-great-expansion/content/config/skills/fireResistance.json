@@ -1,0 +1,55 @@
+{
+	"fireResistance" : {
+		"name" : "Fire Resistance",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"fireResistance" : {
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"subtype" : "spellSchool.fire",
+					"val" : 12
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Fire Resistance}\n\nReduces incoming damage from fire spells and attacks by 12%.",
+			"effects" : {
+				"fireResistance" : { "val" : 12 }
+			},
+			"images" : {
+				"small" : "skills/fireResistance/icons/small/basic",
+				"medium" : "skills/fireResistance/icons/medium/basic",
+				"large" : "skills/fireResistance/icons/large/basic",
+				"scenarioBonus" : "skills/fireResistance/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Fire Resistance}\n\nReduces incoming damage from fire spells and attacks by 24%.",
+			"effects" : {
+				"fireResistance" : { "val" : 24 }
+			},
+			"images" : {
+				"small" : "skills/fireResistance/icons/small/advanced",
+				"medium" : "skills/fireResistance/icons/medium/advanced",
+				"large" : "skills/fireResistance/icons/large/advanced",
+				"scenarioBonus" : "skills/fireResistance/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Fire Resistance}\n\nReduces incoming damage from fire spells and attacks by 36%.",
+			"effects" : {
+				"fireResistance" : { "val" : 36 }
+			},
+			"images" : {
+				"small" : "skills/fireResistance/icons/small/expert",
+				"medium" : "skills/fireResistance/icons/medium/expert",
+				"large" : "skills/fireResistance/icons/large/expert",
+				"scenarioBonus" : "skills/fireResistance/icons/large/expert"
+			}
+		}
+	}
+}

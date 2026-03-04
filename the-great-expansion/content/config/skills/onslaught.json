@@ -1,0 +1,57 @@
+{
+	"onslaught" : {
+		"name" : "Onslaught",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"main" : {
+					"subtype" : "spell.onslaught",
+					"type" : "OPENING_BATTLE_SPELL",
+					"valueType" : "BASE_NUMBER",
+					"val" : 2,
+					"addInfo" : 1
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Onslaught}\n\nUnits under the hero's control receive a bonus of +3 to Attack and +1 to Speed during the first round of combat.",
+			"effects" : {
+				"main" : { "addInfo" : 1 }
+			},
+			"images" : {
+				"small" : "skills/onslaught/icons/small/basic",
+				"medium" : "skills/onslaught/icons/medium/basic",
+				"large" : "skills/onslaught/icons/large/basic",
+				"scenarioBonus" : "skills/onslaught/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Onslaught}\n\nUnits under the hero's control receive a bonus of +6 to Attack and +2 to Speed during the first round of combat.",
+			"effects" : {
+				"main" : { "addInfo" : 2 }
+			},
+			"images" : {
+				"small" : "skills/onslaught/icons/small/advanced",
+				"medium" : "skills/onslaught/icons/medium/advanced",
+				"large" : "skills/onslaught/icons/large/advanced",
+				"scenarioBonus" : "skills/onslaught/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Onslaught}\n\nUnits under the hero's control receive a bonus of +9 to Attack and +3 to Speed during the first round of combat.",
+			"effects" : {
+				"main" : { "addInfo" : 3 }
+			},
+			"images" : {
+				"small" : "skills/onslaught/icons/small/expert",
+				"medium" : "skills/onslaught/icons/medium/expert",
+				"large" : "skills/onslaught/icons/large/expert",
+				"scenarioBonus" : "skills/onslaught/icons/large/expert"
+			}
+		}
+	}
+}

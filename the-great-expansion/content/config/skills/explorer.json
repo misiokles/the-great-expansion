@@ -1,0 +1,65 @@
+{
+	"explorer" : {
+		"name" : "Explorer",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"movement" : {
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementLand",
+					"val" : 85,
+					"valueType" : "ADDITIVE_VALUE"
+				},
+				"movementSea" : {
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementSea",
+					"val" : 85,
+					"valueType" : "ADDITIVE_VALUE"
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Explorer}\n\nIncreases movement points on land and sea by 85.",
+			"effects" : {
+				"movement" : { "val" : 85 },
+				"movementSea" : { "val" : 85 }
+			},
+			"images" : {
+				"small" : "skills/explorer/icons/small/basic",
+				"medium" : "skills/explorer/icons/medium/basic",
+				"large" : "skills/explorer/icons/large/basic",
+				"scenarioBonus" : "skills/explorer/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Explorer}\n\nIncreases movement points on land and sea by 170.",
+			"effects" : {
+				"movement" : { "val" : 170 },
+				"movementSea" : { "val" : 170 }
+			},
+			"images" : {
+				"small" : "skills/explorer/icons/small/advanced",
+				"medium" : "skills/explorer/icons/medium/advanced",
+				"large" : "skills/explorer/icons/large/advanced",
+				"scenarioBonus" : "skills/explorer/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Explorer}\n\nIncreases movement points on land and sea by 250.",
+			"effects" : {
+				"movement" : { "val" : 250 },
+				"movementSea" : { "val" : 250 }
+			},
+			"images" : {
+				"small" : "skills/explorer/icons/small/expert",
+				"medium" : "skills/explorer/icons/medium/expert",
+				"large" : "skills/explorer/icons/large/expert",
+				"scenarioBonus" : "skills/explorer/icons/large/expert"
+			}
+		}
+	}
+}
