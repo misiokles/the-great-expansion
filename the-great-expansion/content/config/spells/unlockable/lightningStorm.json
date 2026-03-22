@@ -10,16 +10,15 @@
 			"water" : false
 		},
 		"level" : 5,
-        "defaultGainChance": 5, 
+        "defaultGainChance": 10, 
         "gainChance":
         {
-            "castle" : 2,
-			"rampart" : 2,
-			"tower" : 8,
-			"inferno" : 5,
-			"necropolis" : 3,
-			"dungeon" : 8,
-			"conflux" : 6
+			"rampart" : 4,
+			"tower" : 16,
+			"inferno" : 10,
+			"necropolis" : 6,
+			"dungeon" : 16,
+			"conflux" : 12
         },
 		"power" : 25,
 		"flags" : {
@@ -49,22 +48,22 @@
 				"cost" : 28
 			},
 			"none" : {
-				"description" : "{Lightning Storm}\n\nCalls down lightning bolts to hit units in the chosen area.",
+				"description" : "{Lightning Storm}\n\nCalls down lightning bolts to hit enemy units in the chosen area.",
 				"power" : 0,
 				"cost" : 28
 			},
 			"basic" : {
-				"description" : "{Lightning Storm}\n\nCalls down lightning bolts to hit units in the chosen area.",
+				"description" : "{Lightning Storm}\n\nCalls down lightning bolts to hit enemy units in the chosen area.",
 				"power" : 0,
 				"cost" : 23
 			},
 			"advanced" : {
-				"description" : "{Lightning Storm}\n\nCalls down lightning bolts to hit units in the chosen area.\n\nDamage inflicted is 30 more than Basic Lightning Storm.",
+				"description" : "{Lightning Storm}\n\nCalls down lightning bolts to hit enemy units in the chosen area.\n\nDamage inflicted is 30 more than Basic Lightning Storm.",
 				"power" : 30,
 				"cost" : 23
 			},
 			"expert" : {
-				"description" : "{Lightning Storm}\n\nCalls down lightning bolts to hit units in the chosen area.\n\nDamage inflicted is 100 more than Basic Lightning Storm.",
+				"description" : "{Lightning Storm}\n\nCalls down lightning bolts to hit enemy units in the chosen area.\n\nDamage inflicted is 100 more than Basic Lightning Storm.",
 				"power" : 100,
 				"cost" : 23
 			}

@@ -1,0 +1,68 @@
+{
+	"absoluteDefense" : {
+		"type" : "ability",
+		"name" : "Absolute Defense",
+		"targetType" : "CREATURE",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 0,
+		"defaultGainChance" : 0,
+		"power" : 8,
+		"flags" : {
+			"positive" : true
+		},
+
+		"graphics" : {
+			"iconEffect" : "spells/absoluteDefense/effect"
+		},
+		"levels" : {
+			"base" : {
+				"range" : "X",
+				"power" : 4,
+				"cost": 0,
+				"description" : "Reduces physical damage received by the stack.",
+				"effects" : {
+					"defense" : {
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"subtype" : "damageTypeAll",
+						"valueType" : "BASE_NUMBER",
+						"val" : 20
+					}
+				},
+				"targetModifier":{"smart":true}
+			},
+			"none" : {
+				"power" : 1
+			},
+			"basic" : {
+				"power" : 1
+			},
+			"advanced" : {
+				"power" : 1,
+				"effects" : {
+					"defense" : {
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"subtype" : "damageTypeAll",
+						"valueType" : "BASE_NUMBER",
+						"val" : 30
+					}
+				}
+			},
+			"expert" : {
+				"power" : 1,
+				"effects" : {
+					"defense" : {
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"subtype" : "damageTypeAll",
+						"valueType" : "BASE_NUMBER",
+						"val" : 40
+					}
+				}
+			}
+		}
+	}
+}

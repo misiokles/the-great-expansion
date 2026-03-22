@@ -1,0 +1,70 @@
+{
+	"coldDeath" : {
+		"type" : "combat",
+		"name" : "Cold Death",
+		"targetType": "CREATURE",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : true
+		},
+		"level" : 5,
+        "defaultGainChance": 18, 
+        "gainChance":
+        {
+			"castle" : 16,
+			"tower" : 22,
+			"inferno" : 16,
+			"necropolis" : 20,
+        },
+		"power" : 1,
+		"flags" : {
+			"damage" : true,
+			"negative" : true
+		},
+		"graphics" : {
+			"iconBook" : "spells/coldDeath/book",
+			"iconScroll" : "spells/coldDeath/scroll",
+			"iconScenarioBonus" : "spells/coldDeath/scenario",
+			"iconEffect" : "spells/coldDeath/effect"
+		},
+		"animation" : {
+			"hit" : ["spells/coldDeath/spell.def"]
+		},
+		"sounds" : {
+		   "cast" : "ICERAY"
+		},
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"power" : 1,
+				"battleEffects" : {
+					"directDamage" : {"type":"core:damage", "killByCount": true}
+				},
+				"targetModifier":{"smart":true},
+				"cost" : 30
+			},
+			"none" : {
+				"description" : "{Cold Death}\n\nDeals enough water damage to kill a number of units equal to 1+Spellpower.",
+				"power" : 1,
+				"cost" : 25
+			},
+			"basic" : {
+				"description" : "{Basic Cold Death}\n\nDeals enough water damage to kill a number of units equal to 1+Spellpower.",
+				"power" : 1,
+				"cost" : 25
+			},
+			"advanced" : {
+				"description" : "{Advanced Cold Death}\n\nDeals enough water damage to kill a number of units equal to 2+Spellpower.",
+				"power" : 2,
+				"cost" : 25
+			},
+			"expert" : {
+				"description" : "{Expert Cold Death}\n\nDeals enough water damage to kill a number of units equal to 3+Spellpower.",
+				"power" : 3,
+				"cost" : 25
+			}
+		}
+	}
+}

@@ -1,0 +1,103 @@
+{
+	"bracadanMagic" : {
+		"name" : "Bracadan Magic",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"hypnotize" : {
+					"val" : 12,
+					"subtype" : "spell.hypnotize",
+					"type" : "SPECIFIC_SPELL_DAMAGE"
+				},
+				"chainLightning" : {
+					"val" : 12,
+					"subtype" : "spell.chainLightning",
+					"type" : "SPECIFIC_SPELL_DAMAGE"
+				},
+				"haste": {
+					"addInfo" : 0,
+					"subtype" : "spell.haste",
+					"type" : "SPECIAL_ADD_VALUE_ENCHANT"
+				},
+				"fortune" : {
+					"addInfo" : 0,
+					"subtype" : "spell.fortune",
+					"type" : "SPECIAL_ADD_VALUE_ENCHANT"
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Bracadan Magic}\n\nIncreases effectiveness of some spells:\nHypnotize health threshold is increased by 12%.\nChain Lightning deals 12% more damage.",
+			"effects" : {
+				"hypnotize" : {
+					"val" : 12
+				},
+				"chainLightning" : {
+					"val" : 12
+				},
+				"haste" : {
+					"addInfo" : 0
+				},
+				"fortune" : {
+					"addInfo" : 0
+				}
+			},
+			"images" : {
+				"small" : "skills/bracadanMagic/icons/small/basic",
+				"medium" : "skills/bracadanMagic/icons/medium/basic",
+				"large" : "skills/bracadanMagic/icons/large/basic",
+				"scenarioBonus" : "skills/bracadanMagic/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Bracadan Magic}\n\nIncreases effectiveness of some spells:\nHypnotize health threshold is increased by 24%.\nChain Lightning deals 24% more damage.\nHaste increases speed by an additional 1.",
+			"effects" : {
+				"hypnotize" : {
+					"val" : 24
+				},
+				"chainLightning" : {
+					"val" : 24
+				},
+				"haste" : {
+					"addInfo" : 1
+				},
+				"fortune" : {
+					"addInfo" : 0
+				}
+			},
+			"images" : {
+				"small" : "skills/bracadanMagic/icons/small/advanced",
+				"medium" : "skills/bracadanMagic/icons/medium/advanced",
+				"large" : "skills/bracadanMagic/icons/large/advanced",
+				"scenarioBonus" : "skills/bracadanMagic/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Bracadan Magic}\n\nIncreases effectiveness of some spells:\nHypnotize health threshold is increased by 36%.\nChain Lightning deals 36% more damage.\nHaste increases speed by an additional 1.\nFortune increases Luck by an additional 1.",
+			"effects" : {
+				"hypnotize" : {
+					"val" : 36
+				},
+				"chainLightning" : {
+					"val" : 36
+				},
+				"haste" : {
+					"addInfo" : 1
+				},
+				"fortune" : {
+					"addInfo" : 1
+				}
+			},
+			"images" : {
+				"small" : "skills/bracadanMagic/icons/small/expert",
+				"medium" : "skills/bracadanMagic/icons/medium/expert",
+				"large" : "skills/bracadanMagic/icons/large/expert",
+				"scenarioBonus" : "skills/bracadanMagic/icons/large/expert"
+			}
+		}
+	}
+}

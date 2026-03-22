@@ -1,0 +1,113 @@
+{
+	"elementalAffinity" : {
+		"name" : "Elemental Affinity",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"fireAttack" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "attack",
+					"val" : 0,
+					"propagator" : "ARMY",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.protectFire"
+						}
+					],
+				},
+				"waterDefense" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "defence",
+					"val" : 0,
+					"propagator" : "ARMY",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.protectWater"
+						}
+					],
+				},
+				"airSpeed" : {
+					"type" : "STACKS_SPEED",
+					"val" : 0,
+					"propagator" : "ARMY",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.protectAir"
+						}
+					],
+				},
+				"earthResistance" : {
+					"type" : "MAGIC_RESISTANCE",
+					"val" : 0,
+					"propagator" : "ARMY",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.protectEarth"
+						}
+					],
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Elemental Affinity}\n\nUnits under the hero's control receive additional bonuses when affected by Protect from Element spells:\nProtect from Fire increases Attack by 1.\nProtect from Water increases Defense by 1.\nProtect from Air increases Speed by 1.\nProtect from Earth grants 6% chance to resist incoming spell.",
+			"effects" : {
+				"fireAttack" : { "val" : 1 },
+				"waterDefense" : { "val" : 1 },
+				"airSpeed" : { "val" : 1 },
+				"earthResistance" : { "val" : 6 }
+			},
+			"images" : {
+				"small" : "skills/elementalAffinity/icons/small/basic",
+				"medium" : "skills/elementalAffinity/icons/medium/basic",
+				"large" : "skills/elementalAffinity/icons/large/basic",
+				"scenarioBonus" : "skills/elementalAffinity/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Elemental Affinity}\n\nUnits under the hero's control receive additional bonuses when affected by Protect from Element spells:\nProtect from Fire increases Attack by 2.\nProtect from Water increases Defense by 2.\nProtect from Air increases Speed by 1.\nProtect from Earth grants 12% chance to resist incoming spell.",
+			"effects" : {
+				"fireAttack" : { "val" : 2 },
+				"waterDefense" : { "val" : 2 },
+				"airSpeed" : { "val" : 1 },
+				"earthResistance" : { "val" : 12 }
+			},
+			"images" : {
+				"small" : "skills/elementalAffinity/icons/small/advanced",
+				"medium" : "skills/elementalAffinity/icons/medium/advanced",
+				"large" : "skills/elementalAffinity/icons/large/advanced",
+				"scenarioBonus" : "skills/elementalAffinity/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Elemental Affinity}\n\nUnits under the hero's control receive additional bonuses when affected by Protect from Element spells:\nProtect from Fire increases Attack by 3.\nProtect from Water increases Defense by 3.\nProtect from Air increases Speed by 2.\nProtect from Earth grants 17% chance to resist incoming spell.",
+			"effects" : {
+				"fireAttack" : { "val" : 3 },
+				"waterDefense" : { "val" : 3 },
+				"airSpeed" : { "val" : 2 },
+				"earthResistance" : { "val" : 17 }
+			},
+			"images" : {
+				"small" : "skills/elementalAffinity/icons/small/expert",
+				"medium" : "skills/elementalAffinity/icons/medium/expert",
+				"large" : "skills/elementalAffinity/icons/large/expert",
+				"scenarioBonus" : "skills/elementalAffinity/icons/large/expert"
+			}
+		}
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"barbarianThrowingClub" : {
+		"bonuses" : {
+			"damage" : {
+				"type" : "PERCENTAGE_DAMAGE_BOOST",
+				"subtype" : "damageTypeMelee",
+				"val" : 25,
+				"valueType" : "PERCENT_TO_ALL",
+				"limiters" : [
+					{
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"bonusType" : "SHOOTER"
+					}
+				]
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "TREASURE",
+		"slot" : "MISC",
+		"value" : 3000,
+		"graphics" : {
+			"image" : "artifacts/barbarianThrowingClub/icon",
+			"scenarioBonus" : "artifacts/barbarianThrowingClub/bonus",
+			"map" : "artifacts/barbarianThrowingClub/adventure.def"
+		},
+		"text" : {
+			"description" : "{Barbarian Throwing Club}\r\n\r\nRanged creatures in the hero's army ability deal 25% more damage in melee.",
+			"event" : "You notice a barbarian hunting with a throwing club. You pick one that's close to you and move on.",
+			"name" : "Barbarian Throwing Club"
+		}
+	}
+}

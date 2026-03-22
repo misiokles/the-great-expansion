@@ -1,0 +1,47 @@
+{
+	"beholderHelmet" : {
+		"bonuses" : {
+			"spellpower" : {
+				"subtype" : "primarySkill.spellpower",
+				"type" : "PRIMARY_SKILL",
+				"val" : 3,
+				"valueType" : "BASE_NUMBER"
+			},
+			"knowledge" : {
+				"subtype" : "primarySkill.knowledge",
+				"type" : "PRIMARY_SKILL",
+				"val" : 3,
+				"valueType" : "BASE_NUMBER"
+			},
+			"spell" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.blind",
+				"val" : 20,
+				"addInfo" : [2,0],
+				"limiters" : [
+					{
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"bonusType" : "SHOOTER"
+					}
+				],
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MAJOR",
+		"slot" : "HEAD",
+		"value" : 9000,
+		"graphics" : {
+			"image" : "artifacts/beholderHelmet/icon",
+			"scenarioBonus" : "artifacts/beholderHelmet/bonus",
+			"map" : "artifacts/beholderHelmet/adventure.def"
+		},
+		"text" : {
+			"description" : "{Beholder Helmet}\r\n\r\nIncreases Spellpower and Knowledge of the hero by 3. Ranged units in the hero's army have 20% chance to cast Blind on attack.",
+			"event" : "You notice a peasant using a Beholder Helmet as a bucket to get some water from nearby river. You help him get some buckets in exchange for the artifact.",
+			"name" : "Beholder Helmet"
+		}
+	}
+}

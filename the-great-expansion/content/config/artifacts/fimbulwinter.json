@@ -1,0 +1,41 @@
+{
+	"fimbulwinter" : {
+		"bonuses" : {
+			"magicResistance" : {
+				"type" : "MAGIC_RESISTANCE",
+				"valueType" : "BASE_NUMBER",
+				"val" : 20
+			},
+			"damageReduction" : {
+				"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeAll",
+				"valueType" : "BASE_NUMBER",
+				"val" : 20
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "RELIC",
+		"slot" : "TORSO",
+		"value" : 53000,
+		"components": 
+		[
+			"axeOfTheJotunns",
+			"shieldOfTheJotunns",
+			"helmOfTheJotunns",
+			"armorOfTheJotunns",
+			"greavesOfTheJotunns"
+		],
+		"graphics" : {
+			"image" : "artifacts/fimbulwinter/icon",
+			"scenarioBonus" : "artifacts/fimbulwinter/bonus",
+			"map" : "artifacts/fimbulwinter/adventure.def"
+		},
+		"text" : {
+			"description" : "{Fimbulwinter}\r\n\r\nThis powerful artifact bestows your army with an additional 20% Magic Resistance and 20% incoming damage reduction.",
+			"event" : "Traversing through the cold mountains, you finally find the object of your search: the Fimbulwinter.",
+			"name" : "Fimbulwinter"
+		}
+	}
+}

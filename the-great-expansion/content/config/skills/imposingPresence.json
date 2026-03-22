@@ -1,0 +1,63 @@
+{
+	"imposingPresence" : {
+		"name" : "Imposing Presence",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"diplo" : {
+					"type" : "WANDERING_CREATURES_JOIN_BONUS",
+					"val" : 1,
+					"valueType" : "BASE_NUMBER"
+				},
+				"morale" : {
+					"type" : "MORALE",
+					"valueType" : "BASE_NUMBER",
+					"val" : 0
+				}
+			},
+		},
+		"basic" : {
+			"description" : "{Basic Imposing Presence}\n\nIncreases the chance that a neutral stack will join your army.",
+			"effects" : {
+				"diplo" : { "val" : 1 },
+				"morale" : { "val" : 0 }
+			},
+			"images" : {
+				"small" : "skills/imposingPresence/icons/small/basic",
+				"medium" : "skills/imposingPresence/icons/medium/basic",
+				"large" : "skills/imposingPresence/icons/large/basic",
+				"scenarioBonus" : "skills/imposingPresence/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Imposing Presence}\n\nIncreases the chance that a neutral stack will join your army. Also increases your army's Morale by 1.",
+			"effects" : {
+				"diplo" : { "val" : 2 },
+				"morale" : { "val" : 1 }
+			},
+			"images" : {
+				"small" : "skills/imposingPresence/icons/small/advanced",
+				"medium" : "skills/imposingPresence/icons/medium/advanced",
+				"large" : "skills/imposingPresence/icons/large/advanced",
+				"scenarioBonus" : "skills/imposingPresence/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Imposing Presence}\n\nIncreases the chance that a neutral stack will join your army. Also increases your army's Morale by 2.",
+			"effects" : {
+				"diplo" : { "val" : 3 },
+				"morale" : { "val" : 2 }
+			},
+			"images" : {
+				"small" : "skills/imposingPresence/icons/small/expert",
+				"medium" : "skills/imposingPresence/icons/medium/expert",
+				"large" : "skills/imposingPresence/icons/large/expert",
+				"scenarioBonus" : "skills/imposingPresence/icons/large/expert"
+			}
+		}
+	}
+}

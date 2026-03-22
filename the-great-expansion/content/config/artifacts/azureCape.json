@@ -1,0 +1,28 @@
+{
+	"azureCape" : {
+		"bonuses" : {
+			"spellDamage" : {
+				"type" : "SPELL_DAMAGE",
+				"subtype" : "spellSchool.water",
+				"val" : 20,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "TREASURE",
+		"slot" : "SHOULDERS",
+		"value" : 2750,
+		"graphics" : {
+			"image" : "artifacts/azureCape/icon",
+			"scenarioBonus" : "artifacts/azureCape/bonus",
+			"map" : "artifacts/azureCape/adventure.def"
+		},
+		"text" : {
+			"description" : "{Azure Cape}\r\n\r\nIncreases damage dealt by water spells by 20%.",
+			"event" : "You notice an Azure Cape hanging on a nearby branch. You take it and put it on.",
+			"name" : "Azure Cape"
+		}
+	}
+}

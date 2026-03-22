@@ -1,0 +1,34 @@
+{
+	"armorOfTheJotunns" : {
+		"bonuses" : {
+			"attack" : {
+				"subtype" : "primarySkill.defence",
+				"type" : "PRIMARY_SKILL",
+				"val" : 7,
+				"valueType" : "BASE_NUMBER"
+			},
+			"immunity" : {
+				"subtype" : "spell.implosion",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MAJOR",
+		"slot" : "TORSO",
+		"value" : 8000,
+		"graphics" : {
+			"image" : "artifacts/armorOfTheJotunns/icon",
+			"scenarioBonus" : "artifacts/armorOfTheJotunns/bonus",
+			"map" : "artifacts/armorOfTheJotunns/adventure.def"
+		},
+		"text" : {
+			"description" : "{Armor of the Jotunns}\r\n\r\nIncreases Defense of the hero by 7 and grants the units in the hero's army immunity to Implosion.",
+			"event" : "Traversing through the cold mountains, you finally find the object of your search: the Armor of the Jotunns.",
+			"name" : "Armor of the Jotunns"
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"inventorsShield" : {
+		"bonuses" : {
+			"health" : {
+				"type" : "STACK_HEALTH",
+				"val" : 250,
+				"limiters" : [
+					{
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"bonusType" : "SIEGE_WEAPON"
+					}
+				],
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MAJOR",
+		"slot" : "LEFT_HAND",
+		"value" : 7000,
+		"graphics" : {
+			"image" : "artifacts/inventorsShield/icon",
+			"scenarioBonus" : "artifacts/inventorsShield/bonus",
+			"map" : "artifacts/inventorsShield/adventure.def"
+		},
+		"text" : {
+			"description" : "{Inventor's Shield}\r\n\r\nIncreases max health of all owned war machines by 250.",
+			"event" : "Your army was attacked by a ballista, however that sounds. After a long time dealing with the machine, you find a shield and a piece of writing describing the research on durability of war machines. Frustrated, you take the shield and move on.",
+			"name" : "Inventor's Shield"
+		}
+	}
+}

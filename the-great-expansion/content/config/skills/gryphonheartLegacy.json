@@ -1,0 +1,106 @@
+{
+	"gryphonheartLegacy" : {
+		"name" : "Gryphonheart's Legacy",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"strikeAndReturn" : 
+				{
+					"type" : "RETURN_AFTER_STRIKE",
+					"limiters": [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "griffin",
+							"includeUpgrades" : true
+						}
+					]
+				}
+			},
+		},
+		"basic" : {
+			"description" : "{Basic Gryphonheart's Legacy}\n\nGrants Griffins the Return after Strike ability.",
+			"effects" : {
+			},
+			"images" : {
+				"small" : "skills/gryphonheartLegacy/icons/small/basic",
+				"medium" : "skills/gryphonheartLegacy/icons/medium/basic",
+				"large" : "skills/gryphonheartLegacy/icons/large/basic",
+				"scenarioBonus" : "skills/gryphonheartLegacy/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Gryphonheart's Legacy}\n\nGrants Griffins the Return after Strike and Jousting abilities.",
+			"effects" : {
+				"jousting" : 
+				{
+					"type" : "JOUSTING",
+					"val" : 4,
+					"limiters": [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "griffin",
+							"includeUpgrades" : true
+						}
+					]
+				}
+			},
+			"images" : {
+				"small" : "skills/gryphonheartLegacy/icons/small/advanced",
+				"medium" : "skills/gryphonheartLegacy/icons/medium/advanced",
+				"large" : "skills/gryphonheartLegacy/icons/large/advanced",
+				"scenarioBonus" : "skills/gryphonheartLegacy/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Gryphonheart's Legacy}\n\nGrants Griffins the Return after Strike and Jousting abilities. Also increases their Speed and Morale by 1.",
+			"effects" : {
+				"jousting" : 
+				{
+					"type" : "JOUSTING",
+					"val" : 4,
+					"limiters": [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "griffin",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"morale" : 
+				{
+					"type" : "MORALE",
+					"val" : 1,
+					"limiters": [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "griffin",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"speed" : 
+				{
+					"type" : "STACKS_SPEED",
+					"val" : 1,
+					"limiters": [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "griffin",
+							"includeUpgrades" : true
+						}
+					]
+				}
+			},
+			"images" : {
+				"small" : "skills/gryphonheartLegacy/icons/small/expert",
+				"medium" : "skills/gryphonheartLegacy/icons/medium/expert",
+				"large" : "skills/gryphonheartLegacy/icons/large/expert",
+				"scenarioBonus" : "skills/gryphonheartLegacy/icons/large/expert"
+			}
+		}
+	}
+}

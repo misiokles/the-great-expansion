@@ -1,0 +1,36 @@
+{
+	"rangersQuiver" : {
+		"bonuses" : {
+			"shots" : {
+				"type" : "SHOTS",
+				"val" : 4
+			},
+			"speed" : {
+				"type" : "STACKS_SPEED",
+				"val" : 1,
+				"limiters" : [
+					{
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"bonusType" : "SHOOTER"
+					}
+				],
+			}
+		},
+		"type" : [
+			"CREATURE"
+		],
+		"class" : "TREASURE",
+		"slot" : "SHOULDERS",
+		"value" : 2750,
+		"graphics" : {
+			"image" : "artifacts/rangersQuiver/icon",
+			"scenarioBonus" : "artifacts/rangersQuiver/bonus",
+			"map" : "artifacts/rangersQuiver/adventure.def"
+		},
+		"text" : {
+			"description" : "{Ranger's Quiver}\r\n\r\nIncreases the amount of Shots of all friendly ranged units by 4 and their Speed by 1.",
+			"event" : "You find a dead ranger. His body is looted of all belongings, but you manage to find a quiver with some arrows. You take it.",
+			"name" : "Ranger's Quiver"
+		}
+	}
+}

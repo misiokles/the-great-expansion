@@ -1,0 +1,33 @@
+{
+	"turbanOfEnlightenment" : {
+		"bonuses" : {
+			"knowledge" : {
+				"subtype" : "primarySkill.knowledge",
+				"type" : "PRIMARY_SKILL",
+				"val" : 3,
+				"valueType" : "BASE_NUMBER"
+			},
+			"experience" : {
+				"type" : "HERO_EXPERIENCE_GAIN_PERCENT",
+				"valueType" : "PERCENT_TO_BASE",
+				"val" : 10
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MINOR",
+		"slot" : "HEAD",
+		"value" : 5750,
+		"graphics" : {
+			"image" : "artifacts/turbanOfEnlightenment/icon",
+			"scenarioBonus" : "artifacts/turbanOfEnlightenment/bonus",
+			"map" : "artifacts/turbanOfEnlightenment/adventure.def"
+		},
+		"text" : {
+			"description" : "{Turban of Enlightenment}\r\n\r\nIncreases Knowledge of the hero by 3 and causes them to receive an additional 10% Experience from all sources.",
+			"event" : "You rest in a library to find that someone forgot to take their Turban of Enlightenment. Not wanting to leave this artifact there, you put it on and leave.",
+			"name" : "Turban of Enlightenment"
+		}
+	}
+}

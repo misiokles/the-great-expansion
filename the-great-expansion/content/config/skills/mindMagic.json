@@ -31,13 +31,13 @@
 			}
 		},
 		"basic" : {
-			"description" : "{Basic Mind Magic}\n\nFrenzy's Defense to Attack bonus increased by 15%. Hypnotize's threshold is increased by 10%.",
+			"description" : "{Basic Mind Magic}\n\nFrenzy's Defense to Attack bonus increased by 15%. Hypnotize's threshold is increased by 15%.",
 			"effects" : {
 				"frenzy" : {
 					"addInfo" : 15
 				},
 				"hypnotize" : {
-					"val" : 10
+					"val" : 15
 				},
 				"mirth" : {
 					"addInfo" : 0
@@ -54,13 +54,13 @@
 			}
 		},
 		"advanced" : {
-			"description" : "{Advanced Mind Magic}\n\nFrenzy's Defense to Attack bonus increased by 30%. Hypnotize's threshold is increased by 20%.",
+			"description" : "{Advanced Mind Magic}\n\nFrenzy's Defense to Attack bonus increased by 30%. Hypnotize's threshold is increased by 30%.",
 			"effects" : {
 				"frenzy" : {
 					"addInfo" : 30
 				},
 				"hypnotize" : {
-					"val" : 20
+					"val" : 30
 				},
 				"mirth" : {
 					"addInfo" : 0
@@ -77,13 +77,13 @@
 			}
 		},
 		"expert" : {
-			"description" : "{Expert Mind Magic}\n\nFrenzy's Defense to Attack bonus increased by 45%. Hypnotize's threshold is increased by 30%. Mirth and Sorrow Morale modifier increased by 1.",
+			"description" : "{Expert Mind Magic}\n\nFrenzy's Defense to Attack bonus increased by 45%. Hypnotize's threshold is increased by 45%. Mirth and Sorrow Morale modifier increased by 1.",
 			"effects" : {
 				"frenzy" : {
 					"addInfo" : 45
 				},
 				"hypnotize" : {
-					"val" : 30
+					"val" : 45
 				},
 				"mirth" : {
 					"addInfo" : 1

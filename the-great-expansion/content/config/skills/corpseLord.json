@@ -1,0 +1,67 @@
+{
+	"corpseLord" : {
+		"name" : "Corpse Lord",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"speed" : {
+					"type" : "STACKS_SPEED",
+					"val" : 0,
+					"valueType" : "BASE_NUMBER",
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "walkingDead",
+							"includeUpgrades" : true
+						}
+					]
+				}
+			},
+		},
+		"basic" : {
+			"description" : "{Basic Corpse Lord}\n\nIncreases Walking Dead's Speed by 1.",
+			"effects" : {
+				"speed" : { "val" : 1 }
+			},
+			"images" : {
+				"small" : "skills/corpseLord/icons/small/basic",
+				"medium" : "skills/corpseLord/icons/medium/basic",
+				"large" : "skills/corpseLord/icons/large/basic",
+				"scenarioBonus" : "skills/corpseLord/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Corpse Lord}\n\nIncreases Walking Dead's Speed by 2.",
+			"effects" : {
+				"speed" : { "val" : 2 }
+			},
+			"images" : {
+				"small" : "skills/corpseLord/icons/small/advanced",
+				"medium" : "skills/corpseLord/icons/medium/advanced",
+				"large" : "skills/corpseLord/icons/large/advanced",
+				"scenarioBonus" : "skills/corpseLord/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Corpse Lord}\n\nIncreases Walking Dead's Speed by 2. Necromancy now raises Walking Dead instead of Skeletons.",
+			"effects" : {
+				"speed" : { "val" : 2 },
+				"walkingDead" : {
+					"type" : "IMPROVED_NECROMANCY",
+					"subtype" : "creature.walkingDead",
+					"addInfo" : 1
+				},
+			},
+			"images" : {
+				"small" : "skills/corpseLord/icons/small/expert",
+				"medium" : "skills/corpseLord/icons/medium/expert",
+				"large" : "skills/corpseLord/icons/large/expert",
+				"scenarioBonus" : "skills/corpseLord/icons/large/expert"
+			}
+		}
+	}
+}

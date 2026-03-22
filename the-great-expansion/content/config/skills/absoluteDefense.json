@@ -1,0 +1,57 @@
+{
+	"absoluteDefense" : {
+		"name" : "Absolute Defense",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"main" : {
+					"subtype" : "spell.absoluteDefense",
+					"type" : "OPENING_BATTLE_SPELL",
+					"valueType" : "BASE_NUMBER",
+					"val" : 1,
+					"addInfo" : 1
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Absolute Defense}\n\nUnits under the hero's control receive 20% less damage from physical attacks during the first round of combat.",
+			"effects" : {
+				"main" : { "addInfo" : 1 }
+			},
+			"images" : {
+				"small" : "skills/absoluteDefense/icons/small/basic",
+				"medium" : "skills/absoluteDefense/icons/medium/basic",
+				"large" : "skills/absoluteDefense/icons/large/basic",
+				"scenarioBonus" : "skills/absoluteDefense/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Absolute Defense}\n\nUnits under the hero's control receive 30% less damage from physical attacks during the first round of combat.",
+			"effects" : {
+				"main" : { "addInfo" : 2 }
+			},
+			"images" : {
+				"small" : "skills/absoluteDefense/icons/small/advanced",
+				"medium" : "skills/absoluteDefense/icons/medium/advanced",
+				"large" : "skills/absoluteDefense/icons/large/advanced",
+				"scenarioBonus" : "skills/absoluteDefense/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Absolute Defense}\n\nUnits under the hero's control receive 40% less damage from physical attacks during the first round of combat.",
+			"effects" : {
+				"main" : { "addInfo" : 3 }
+			},
+			"images" : {
+				"small" : "skills/absoluteDefense/icons/small/expert",
+				"medium" : "skills/absoluteDefense/icons/medium/expert",
+				"large" : "skills/absoluteDefense/icons/large/expert",
+				"scenarioBonus" : "skills/absoluteDefense/icons/large/expert"
+			}
+		}
+	}
+}

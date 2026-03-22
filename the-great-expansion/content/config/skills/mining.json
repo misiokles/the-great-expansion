@@ -1,0 +1,75 @@
+{
+	"mining" : {
+		"name" : "Mining",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"generatesGold" : {
+					"type" : "GENERATE_RESOURCE",
+					"subtype" : "resource.gold",
+					"propagator" : "PLAYER",
+					"valueType" : "BASE_NUMBER",
+					"updater" : {
+						"type" : "TIMES_ARMY_SIZE",
+						"filteredCreature" : "dwarf"
+					},
+					"stacking" : "Dwarfs"
+				},
+				"generatesGold2" : {
+					"type" : "GENERATE_RESOURCE",
+					"subtype" : "resource.gold",
+					"propagator" : "PLAYER",
+					"valueType" : "BASE_NUMBER",
+					"updater" : {
+						"type" : "TIMES_ARMY_SIZE",
+						"filteredCreature" : "battleDwarf"
+					},
+					"stacking" : "Battle Dwarves"
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Mining}\n\nGenerates 2 Gold per day per Dwarf in the hero's army.",
+			"effects" : {
+				"generatesGold" : { "val" : 2 },
+				"generatesGold2" : { "val" : 2 }
+			},
+			"images" : {
+				"small" : "skills/mining/icons/small/basic",
+				"medium" : "skills/mining/icons/medium/basic",
+				"large" : "skills/mining/icons/large/basic",
+				"scenarioBonus" : "skills/mining/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Mining}\n\nGenerates 4 Gold per day per Dwarf in the hero's army.",
+			"effects" : {
+				"generatesGold" : { "val" : 4 },
+				"generatesGold2" : { "val" : 4 }
+			},
+			"images" : {
+				"small" : "skills/mining/icons/small/advanced",
+				"medium" : "skills/mining/icons/medium/advanced",
+				"large" : "skills/mining/icons/large/advanced",
+				"scenarioBonus" : "skills/mining/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Mining}\n\nGenerates 6 Gold per day per Dwarf in the hero's army.",
+			"effects" : {
+				"generatesGold" : { "val" : 6 },
+				"generatesGold2" : { "val" : 6 }
+			},
+			"images" : {
+				"small" : "skills/mining/icons/small/expert",
+				"medium" : "skills/mining/icons/medium/expert",
+				"large" : "skills/mining/icons/large/expert",
+				"scenarioBonus" : "skills/mining/icons/large/expert"
+			}
+		}
+	}
+}

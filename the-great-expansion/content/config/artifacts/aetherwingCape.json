@@ -1,0 +1,28 @@
+{
+	"aetherwingCape" : {
+		"bonuses" : {
+			"spellDamage" : {
+				"type" : "SPELL_DAMAGE",
+				"subtype" : "spellSchool.air",
+				"val" : 20,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "TREASURE",
+		"slot" : "SHOULDERS",
+		"value" : 2750,
+		"graphics" : {
+			"image" : "artifacts/aetherwingCape/icon",
+			"scenarioBonus" : "artifacts/aetherwingCape/bonus",
+			"map" : "artifacts/aetherwingCape/adventure.def"
+		},
+		"text" : {
+			"description" : "{Aetherwing Cape}\r\n\r\nIncreases damage dealt by air spells by 20%.",
+			"event" : "You notice an Aetherwing Cape hanging on a nearby branch. You take it and put it on.",
+			"name" : "Aetherwing Cape"
+		}
+	}
+}

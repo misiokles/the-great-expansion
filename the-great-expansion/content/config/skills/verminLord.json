@@ -1,0 +1,89 @@
+{
+	"verminLord" : {
+		"name" : "Vermin Lord",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"noEnemyRetaliation" : 
+				{
+					"type" : "BLOCKS_RETALIATION",
+					"limiters": [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "imp",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"speed" : {
+					"type" : "STACKS_SPEED",
+					"val" : 0,
+					"valueType" : "BASE_NUMBER",
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "imp",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"max" : {
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax",
+					"val" : 0,
+					"valueType" : "ADDITIVE_VALUE",
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "imp",
+							"includeUpgrades" : true
+						}
+					]
+				}
+			},
+		},
+		"basic" : {
+			"description" : "{Basic Vermin Lord}\n\nGrants Imps the No Enemy Retaliation ability.",
+			"effects" : {
+				"speed" : { "val" : 0 },
+				"max" : { "val" : 0 },
+			},
+			"images" : {
+				"small" : "skills/verminLord/icons/small/basic",
+				"medium" : "skills/verminLord/icons/medium/basic",
+				"large" : "skills/verminLord/icons/large/basic",
+				"scenarioBonus" : "skills/verminLord/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Vermin Lord}\n\nGrants Imps the No Enemy Retaliation ability and increases their Speed by 2.",
+			"effects" : {
+				"speed" : { "val" : 2 },
+				"max" : { "val" : 0 },
+			},
+			"images" : {
+				"small" : "skills/verminLord/icons/small/advanced",
+				"medium" : "skills/verminLord/icons/medium/advanced",
+				"large" : "skills/verminLord/icons/large/advanced",
+				"scenarioBonus" : "skills/verminLord/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Vermin Lord}\n\nGrants Imps the No Enemy Retaliation ability, increases their Speed by 2 and their Max Damage by 1.",
+			"effects" : {
+				"speed" : { "val" : 2 },
+				"max" : { "val" : 1 },
+			},
+			"images" : {
+				"small" : "skills/verminLord/icons/small/expert",
+				"medium" : "skills/verminLord/icons/medium/expert",
+				"large" : "skills/verminLord/icons/large/expert",
+				"scenarioBonus" : "skills/verminLord/icons/large/expert"
+			}
+		}
+	}
+}
